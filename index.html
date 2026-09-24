@@ -1,0 +1,1421 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Indoor Golf Simulator in Thibodaux, LA | Thibodaux T-Box</title>
+<meta name="description" content="Thibodaux T-Box is an indoor golf simulator with three private bays, opening soon in Thibodaux, Louisiana. Founding memberships are available now.">
+<meta name="theme-color" content="#0B1310">
+<link rel="apple-touch-icon" href="assets/tbox-favicon.png">
+<meta name="color-scheme" content="light">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAB/lBMVEX+/v4VFhgFBgcAAACZmZqop6n////l5eUXWjHa29pMTU5YWVkGTCP////U4dn///+GrZa2tLaHsJj////Gxsf///////+FhYZ7powbYTViY2UkJScjaD4ARRg7PD0cHiBMTU6pw7NLfV7AvsCHh4gVOCWfoKCzwLl4hX2AfoArcEdfYGA7Ozuen6AdJyMWJx8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABh3wiNAAAAgHRSTlP+/vsA7u0C7fro5OP+t+NJ7e3swfWGPerm9uvw9f/p997n6fPa/+bV2vTt5N7t7/4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKaoweQAAAGZSURBVHja7ZfpcoIwFIUvWY2oNALiUqt23/v+b9cQtCRoDSSd+oczKskM5/MmYckBrMUwTvIUWirNE20pBdrOcDKGThonpWsPYJh1tGsE00VA6U88/FURJYDhGXhqpszAGEt9AakyA8Nj8NYYK0A9AE4oOeiD/C5pDIKBWcANaiVqlgCJURFfRW6hwhxEArnZpcjtH1qzkIO9BEs3QdgL0ZhWvnIQ0KNjYaRx8ubIvomWzqXlP5rwAulBc0PdrhOiAbH/hVYBhj2gB/SA/wdk79IB4Nv7cwCKiAMgzj8eWgCi+NIV9IALAFAgYBXfhACKoXoXktgfIHn5spX+AH37ZVkIgHMhMu4N4IILmd0FVKD+PpMiAJC9SFKAD2BS6ekzip737UkHwO56UGmxiB4O7cG8NWA+qPU1qtu3JwFpEyBe16PTWi92R4C0udWlMJ1Pp1da5VF/q4P6UaNoAHJrs60AS1pJ6k/dobLqFugN7M22lTdIi83+1k4cZuBQU0SoS8S6NWZ/EXlCQ1dw7AsPnuHRNzx8B8X/bz+gHDBlMPliAAAAAElFTkSuQmCC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400..500&family=Mona+Sans:wdth,wght@75..100,400..900&display=swap">
+<script>
+  // Animated elements start hidden. If the motion scripts never arrive, show everything after 3.5s.
+  document.documentElement.classList.add('js');
+  setTimeout(function () {
+    if (!document.documentElement.classList.contains('is-ready')) document.documentElement.classList.remove('js');
+  }, 3500);
+</script>
+<!-- Google Tag Manager: paste the container snippet (GTM-XXXXXXX) here. Load GA4 and the Meta Pixel through GTM. -->
+<script>window.dataLayer = window.dataLayer || [];</script>
+<!-- Local SEO. Add streetAddress, telephone, url, geo and openingHours once they are confirmed. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "SportsActivityLocation"],
+  "name": "Thibodaux T-Box",
+  "alternateName": "T-Box Golf Simulators",
+  "description": "Indoor golf simulator in Thibodaux, Louisiana with three private bays, walk-in tee times and memberships.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Thibodaux",
+    "addressRegion": "LA",
+    "postalCode": "70301",
+    "addressCountry": "US"
+  },
+  "priceRange": "$$"
+}
+</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<style>
+/* ==========================================================================
+   Tokens
+   ========================================================================== */
+:root {
+  /* Brand green. The rest of the palette is mixed from this one value. */
+  --brand: #175932;
+
+  /* Fallbacks for browsers without color-mix(). */
+  --brand-deep: #124827;
+  --leaf: #76C492;
+  --tint: #E6F0EA;
+  --ink: #0B120E;
+  --ink-2: #4E5853;
+  --ink-3: #69736E;
+  --paper: #F2F4F2;
+  --mist: #E4E9E6;
+  --deep: #0B1310;
+  --deep-2: #121D18;
+  --tee-1: #CFE0D6;
+  --tee-2: #9CC2AB;
+  --tee-3: #5E9676;
+
+  --on-deep: #F1F5F2;
+  --on-deep-2: rgba(241, 245, 242, .66);
+
+  --sans: "Mona Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --wrap: 1320px;
+  --section: clamp(6rem, 3.5rem + 7.5vw, 11rem);
+  --nav-h: 60px;
+  --r: 16px;
+  --r-btn: 8px;
+  --ease: cubic-bezier(.16, 1, .3, 1);
+}
+@supports (color: color-mix(in oklab, red, blue)) {
+  :root {
+    --brand-deep: color-mix(in oklab, var(--brand) 84%, #000);
+    --tint: color-mix(in oklab, var(--brand) 11%, #fff);
+    --ink: color-mix(in oklab, var(--brand) 10%, #060807);
+    --ink-2: color-mix(in oklab, var(--brand) 12%, #505553);
+    --ink-3: color-mix(in oklab, var(--brand) 10%, #6A6E6C);
+    --paper: color-mix(in oklab, var(--brand) 4%, #F3F4F3);
+    --mist: color-mix(in oklab, var(--brand) 9%, #EAECEA);
+    --deep: color-mix(in oklab, var(--brand) 16%, #050706);
+    --deep-2: color-mix(in oklab, var(--brand) 22%, #0B0E0C);
+    --tee-1: color-mix(in oklab, var(--brand) 22%, #fff);
+    --tee-2: color-mix(in oklab, var(--brand) 48%, #fff);
+    --tee-3: color-mix(in oklab, var(--brand) 75%, #fff);
+  }
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: var(--nav-h); }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font: 400 1.0625rem/1.55 var(--sans);
+  font-stretch: 100%;
+  letter-spacing: -.005em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+}
+h1, h2, h3, p, ol, ul, dl, dd, figure { margin: 0; }
+img, svg, video { display: block; max-width: 100%; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+em { font-style: normal; }
+::selection { background: var(--tint); color: var(--ink); }
+:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
+[data-dark] :focus-visible, .nav.is-dark :focus-visible { outline-color: var(--leaf); }
+[tabindex="-1"]:focus { outline: none; }
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip { position: fixed; left: 1rem; top: -5rem; z-index: 100; padding: .75rem 1.1rem; border-radius: var(--r-btn); background: var(--ink); color: #fff; text-decoration: none; transition: top .3s var(--ease); }
+.skip:focus { top: 1rem; }
+.wrap { width: min(var(--wrap), 100% - 2 * var(--gutter)); margin-inline: auto; }
+
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+html.lenis { scroll-behavior: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped, .menu-open { overflow: hidden; }
+
+/* ==========================================================================
+   Type
+   ========================================================================== */
+.kicker {
+  margin-bottom: 1.25rem;
+  font-size: .8125rem;
+  font-weight: 650;
+  letter-spacing: .16em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+.display, .h2, .hero__title {
+  font-weight: 800;
+  font-stretch: 75%;
+  text-transform: uppercase;
+  letter-spacing: -.01em;
+  line-height: .9;
+}
+.h2 { font-size: clamp(2.875rem, 1.3rem + 5.4vw, 6.25rem); text-wrap: balance; }
+.h2 em, .hero__title em { color: var(--brand); }
+[data-dark] .h2 em, [data-dark] .hero__title em, [data-dark] .kicker { color: var(--leaf); }
+.lead {
+  max-width: 38ch;
+  font-size: clamp(1.1875rem, 1.05rem + .45vw, 1.375rem);
+  line-height: 1.45;
+  letter-spacing: -.012em;
+  color: var(--ink-2);
+  text-wrap: pretty;
+}
+[data-dark] .lead { color: var(--on-deep-2); }
+.head { margin-bottom: clamp(3.25rem, 6vw, 5.5rem); }
+.head .lead { margin-top: 1.5rem; }
+.head--center { max-width: 60rem; margin-inline: auto; text-align: center; }
+.head--center .lead { margin-inline: auto; }
+@media (min-width: 900px) {
+  .head--split { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 4rem; align-items: end; }
+  .head--split .lead { margin-top: 0; padding-bottom: .35rem; }
+}
+
+/* Headline words rise out of a mask (split by script). */
+[data-split] .w { display: inline-block; overflow: hidden; vertical-align: top; padding: .04em .04em .12em; margin: -.04em -.04em -.12em; }
+[data-split] .w > span { display: inline-block; will-change: transform; }
+.js [data-split] { opacity: 0; }
+.js [data-reveal] { opacity: 0; transform: translate3d(0, 30px, 0); }
+.js [data-hero-el] { opacity: 0; transform: translate3d(0, 20px, 0); }
+
+/* ==========================================================================
+   Buttons and links
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  min-height: 52px;
+  padding: .8rem 1.6rem;
+  border: 0;
+  border-radius: var(--r-btn);
+  font: 650 .875rem/1 var(--sans);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color .4s var(--ease), color .4s var(--ease), transform .4s var(--ease);
+}
+.btn:active { transform: scale(.97); }
+.btn--primary { background: var(--brand); color: #fff; }
+.btn--primary:hover { background: var(--brand-deep); }
+[data-dark] .btn--primary, .nav.is-dark .btn--nav { background: var(--leaf); color: var(--ink); }
+[data-dark] .btn--primary:hover, .nav.is-dark .btn--nav:hover { background: #9AD8B0; }
+.btn--light { background: #fff; color: var(--ink); }
+.btn--light:hover { background: var(--tint); }
+.btn--soft { background: var(--tint); color: var(--brand-deep); }
+.btn--soft:hover { background: var(--brand); color: #fff; }
+.btn svg { width: 12px; height: 12px; transition: transform .4s var(--ease); }
+.btn:hover svg { transform: translateX(3px); }
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  color: var(--brand);
+  font-size: .875rem;
+  font-weight: 650;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+[data-dark] .link { color: var(--leaf); }
+.link svg { width: 11px; height: 11px; transition: transform .4s var(--ease); }
+.link:hover svg { transform: translateX(4px); }
+
+/* ==========================================================================
+   Nav: sticky on every breakpoint, Book Now always visible
+   ========================================================================== */
+.nav {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  height: var(--nav-h);
+  color: var(--ink);
+  background: rgba(255, 255, 255, .78);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  transition: background-color .5s var(--ease), color .5s var(--ease);
+}
+.nav.is-dark { background: rgba(8, 14, 11, .5); color: var(--on-deep); }
+.nav.is-menu { background: rgba(255, 255, 255, 0); color: var(--ink); -webkit-backdrop-filter: none; backdrop-filter: none; }
+.nav__in { position: relative; height: 100%; display: flex; align-items: center; }
+.logo { display: inline-flex; align-items: baseline; gap: .6rem; color: inherit; text-decoration: none; white-space: nowrap; }
+.logo__stack { display: grid; }
+.logo__stack img { grid-area: 1 / 1; display: block; width: auto; height: 34px; transition: opacity .5s var(--ease); }
+.logo__rev { opacity: 0; }
+.nav.is-dark .logo__pos { opacity: 0; }
+.nav.is-dark .logo__rev { opacity: 1; }
+.nav.is-menu .logo__pos { opacity: 1; }
+.nav.is-menu .logo__rev { opacity: 0; }
+@media (min-width: 1024px) { .logo__stack img { height: 38px; } }
+.nav__links { display: none; }
+.nav__links a { font-size: .75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; opacity: .72; transition: opacity .3s; }
+.nav__links a:hover { opacity: 1; }
+.nav__actions { margin-left: auto; display: flex; align-items: center; gap: .4rem; }
+.nav__login { display: none; margin-right: 1.25rem; font-size: .75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; opacity: .72; transition: opacity .3s; }
+.nav__login:hover { opacity: 1; }
+.btn--nav { position: relative; min-height: 38px; padding: .55rem 1.1rem; font-size: .75rem; border-radius: 7px; background: var(--brand); color: #fff; }
+.btn--nav::after { content: ""; position: absolute; inset: -5px; }
+.btn--nav:hover { background: var(--brand-deep); }
+.nav.is-menu .btn--nav { background: var(--brand); color: #fff; }
+.nav__menu { display: grid; place-items: center; width: 44px; height: 44px; margin-right: -10px; padding: 0; border: 0; border-radius: 10px; background: none; cursor: pointer; }
+.nav__menu span { grid-area: 1 / 1; width: 20px; height: 2px; border-radius: 2px; background: currentColor; transition: transform .5s var(--ease); }
+.nav__menu span:first-child { transform: translateY(-4px); }
+.nav__menu span:last-child { transform: translateY(4px); }
+.nav__menu[aria-expanded="true"] span:first-child { transform: rotate(45deg); }
+.nav__menu[aria-expanded="true"] span:last-child { transform: rotate(-45deg); }
+@media (min-width: 1024px) {
+  .nav__links { display: flex; gap: 1.75rem; position: absolute; left: 50%; transform: translateX(-50%); }
+  .nav__menu { display: none; }
+}
+@media (min-width: 1180px) { .nav__login { display: inline-flex; } }
+@media (min-width: 1280px) { .nav__links { gap: 2.5rem; } }
+
+/* Mobile menu */
+.menu {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--nav-h) + 2rem) var(--gutter) calc(1.5rem + env(safe-area-inset-bottom));
+  background: rgba(255, 255, 255, .98);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s var(--ease), visibility 0s linear .4s;
+}
+.menu.is-open { opacity: 1; visibility: visible; transition: opacity .4s var(--ease); }
+.menu__links a {
+  display: block;
+  padding: .3rem 0;
+  font-size: clamp(2.5rem, 12vw, 3.5rem);
+  font-weight: 800;
+  font-stretch: 75%;
+  text-transform: uppercase;
+  line-height: 1;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .5s var(--ease), transform .7s var(--ease);
+}
+.menu.is-open .menu__links a { opacity: 1; transform: none; transition-delay: calc(60ms + var(--i) * 45ms); }
+.menu__foot { margin-top: auto; display: grid; gap: 1.1rem; }
+.menu__foot .btn { width: 100%; min-height: 56px; }
+.menu__meta { display: flex; justify-content: center; gap: 2rem; }
+.menu__meta a { font-weight: 600; color: var(--ink-2); text-decoration: none; }
+@media (min-width: 1024px) { .menu { display: none; } }
+
+/* ==========================================================================
+   Image placeholders: clearly bounded slots.
+   To add a photo, put an <img> inside .ph__fill. The icon and label hide on their own.
+   ========================================================================== */
+.ph {
+  --ph-a: var(--mist);
+  --ph-b: var(--paper);
+  --ph-glow: rgba(255, 255, 255, .8);
+  --ph-tag-bg: rgba(255, 255, 255, .85);
+  --ph-tag-fg: var(--ink-2);
+  --ph-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='none' stroke='%230B120E' stroke-width='1.5'%3E%3Crect x='6' y='12' width='36' height='27' rx='5'/%3E%3Ccircle cx='24' cy='25.5' r='7'/%3E%3Cpath d='M17 12l2.5-4.5h9L31 12'/%3E%3C/svg%3E");
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: var(--r);
+  background: var(--ph-b);
+}
+.ph__fill {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(80% 70% at 75% 15%, var(--ph-glow), transparent 62%),
+    linear-gradient(160deg, var(--ph-a), var(--ph-b));
+  will-change: transform;
+}
+.ph img, .ph video, .ph iframe { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border: 0; }
+.ph::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  margin: auto;
+  width: 44px;
+  height: 44px;
+  opacity: .22;
+  background: var(--ph-icon) center / contain no-repeat;
+  pointer-events: none;
+}
+.ph__tag {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  max-width: calc(100% - 40px);
+  padding: .5rem .8rem .5rem .65rem;
+  border-radius: 999px;
+  background: var(--ph-tag-bg);
+  color: var(--ph-tag-fg);
+  font: 500 11px/1.3 var(--mono);
+  letter-spacing: .01em;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.ph__tag svg { flex: none; width: 14px; height: 14px; }
+.ph__tag span { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.ph:has(img, video, iframe)::before, .ph:has(img, video, iframe) .ph__tag { display: none; }
+.ph--dark {
+  --ph-a: #16271E;
+  --ph-b: #09110D;
+  --ph-glow: rgba(160, 200, 176, .16);
+  --ph-tag-bg: rgba(6, 12, 9, .55);
+  --ph-tag-fg: rgba(241, 245, 242, .86);
+  --ph-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='none' stroke='%23ffffff' stroke-width='1.5'%3E%3Crect x='6' y='12' width='36' height='27' rx='5'/%3E%3Ccircle cx='24' cy='25.5' r='7'/%3E%3Cpath d='M17 12l2.5-4.5h9L31 12'/%3E%3C/svg%3E");
+}
+.ph--bleed { position: absolute; inset: 0; border-radius: 0; }
+.ph--bleed::before { display: none; }
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+.hero { position: relative; height: 100vh; height: 100svh; min-height: 620px; color: #fff; background: #fff; }
+.hero__media { position: absolute; inset: 0; overflow: hidden; transform-origin: 50% 40%; will-change: transform; background: var(--deep); }
+.ph--hero .ph__fill {
+  background:
+    radial-gradient(16% 70% at 70% 0%, rgba(205, 230, 214, .30), transparent 72%),
+    radial-gradient(26% 38% at 70% 62%, rgba(150, 196, 168, .20), transparent 70%),
+    radial-gradient(60% 45% at 70% 100%, rgba(40, 80, 58, .45), transparent 70%),
+    linear-gradient(180deg, #0F1D16 0%, #08100C 100%);
+}
+.ph--hero .ph__tag { top: calc(var(--nav-h) + 20px); right: max(20px, (100% - var(--wrap)) / 2); bottom: auto; left: auto; }
+.hero__shade {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background:
+    linear-gradient(0deg, rgba(4, 8, 6, .82) 0%, rgba(4, 8, 6, .3) 45%, rgba(4, 8, 6, 0) 70%),
+    linear-gradient(180deg, rgba(4, 8, 6, .5) 0%, rgba(4, 8, 6, 0) 22%);
+}
+.hero__content { position: absolute; inset: 0; z-index: 3; display: flex; align-items: flex-end; padding: calc(var(--nav-h) + 2rem) 0 calc(clamp(2.5rem, 7vh, 5rem) + env(safe-area-inset-bottom)); }
+.hero__kicker { margin-bottom: 1.25rem; font-size: .8125rem; font-weight: 400; letter-spacing: .18em; line-height: 1.5; text-transform: uppercase; color: rgba(255, 255, 255, .82); }
+.hero__kicker strong { display: block; font-weight: 700; color: var(--leaf); }
+.hero__title { font-size: clamp(4rem, 19vw, 6.5rem); }
+.hero__title .ln { display: block; }
+.hero__lead { max-width: 34ch; margin-top: 1.5rem; font-size: clamp(1.125rem, 1rem + .5vw, 1.375rem); line-height: 1.45; color: rgba(255, 255, 255, .86); text-wrap: pretty; }
+.hero__ctas { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2.25rem; }
+@media (min-width: 640px) {
+  .hero__title { font-size: clamp(6.5rem, 2rem + 9.5vw, 11.5rem); }
+}
+@media (min-width: 900px) {
+  .hero__content { align-items: center; }
+  .hero__shade {
+    background:
+      linear-gradient(90deg, rgba(4, 8, 6, .78) 0%, rgba(4, 8, 6, .42) 38%, rgba(4, 8, 6, 0) 64%),
+      linear-gradient(0deg, rgba(4, 8, 6, .5) 0%, rgba(4, 8, 6, 0) 30%),
+      linear-gradient(180deg, rgba(4, 8, 6, .45) 0%, rgba(4, 8, 6, 0) 20%);
+  }
+}
+
+/* ==========================================================================
+   Founding member countdown: days remaining only
+   ========================================================================== */
+.founding { padding-block: var(--section); }
+.founding__grid { display: grid; gap: 2.5rem; align-items: center; }
+@media (min-width: 900px) { .founding__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 5rem; } }
+.count { line-height: 1; }
+.odo {
+  display: flex;
+  font-size: clamp(10rem, 3rem + 30vw, 22rem);
+  font-weight: 800;
+  font-stretch: 75%;
+  line-height: 1.04;
+  letter-spacing: 0;
+  color: var(--brand);
+  font-variant-numeric: tabular-nums lining-nums;
+}
+.odo__col {
+  display: block;
+  height: 1.04em;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 9%, #000 91%, transparent);
+  mask-image: linear-gradient(180deg, transparent, #000 9%, #000 91%, transparent);
+}
+.odo__col + .odo__col { margin-left: -.02em; }
+.odo__strip { display: block; will-change: transform; }
+.odo__strip > span { display: block; height: 1.04em; }
+.js .odo { opacity: 0; }
+.count__label { display: block; margin-top: .75rem; font-size: clamp(1.25rem, 1rem + .9vw, 1.75rem); font-weight: 800; font-stretch: 75%; letter-spacing: .02em; text-transform: uppercase; color: var(--ink); }
+.founding__copy { max-width: 40ch; margin-top: 1.5rem; }
+.founding .btn { margin-top: 2.25rem; }
+
+/* ==========================================================================
+   How it works
+   ========================================================================== */
+.how { padding-block: var(--section); background: var(--paper); }
+.steps { list-style: none; padding: 0; display: grid; gap: 1rem; }
+@media (min-width: 900px) { .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.steps > li { display: flex; }
+.step { flex: 1; padding: clamp(2rem, 3vw, 2.75rem); border-radius: var(--r); background: #fff; transition: transform .7s var(--ease), box-shadow .7s var(--ease); }
+.step:hover { transform: translateY(-4px); box-shadow: 0 30px 60px -34px rgba(11, 18, 14, .28); }
+.step__icon { display: grid; place-items: center; width: 84px; height: 84px; border-radius: 50%; background: var(--tint); color: var(--brand); }
+.step__icon svg { width: 42px; height: 42px; overflow: visible; }
+.step__title { margin-top: clamp(2.5rem, 5vw, 4rem); font-size: clamp(1.75rem, 1.4rem + 1vw, 2.375rem); }
+.step__copy { max-width: 32ch; margin-top: .85rem; color: var(--ink-2); }
+
+/* ==========================================================================
+   Membership teaser (dark band over a photo, glass cards)
+   ========================================================================== */
+.plans { position: relative; isolation: isolate; padding-block: var(--section); color: var(--on-deep); }
+.plans__bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; background: var(--deep); }
+.plans__shade { position: absolute; inset: 0; z-index: 3; background: linear-gradient(180deg, rgba(6, 11, 8, .86) 0%, rgba(6, 11, 8, .62) 45%, rgba(6, 11, 8, .9) 100%); }
+.plans__bg .ph--dark .ph__fill {
+  background:
+    radial-gradient(40% 30% at 50% 88%, rgba(70, 130, 92, .5), transparent 70%),
+    radial-gradient(30% 60% at 80% 10%, rgba(180, 215, 194, .14), transparent 70%),
+    linear-gradient(180deg, #0C1712 0%, #102219 60%, #0C1914 100%);
+}
+.plans__bg .ph__tag { left: auto; right: max(20px, (100% - var(--wrap)) / 2); bottom: 22px; z-index: 4; }
+.plans__grid { list-style: none; padding: 0; display: grid; gap: 1rem; }
+.plans__grid > li { display: flex; }
+@media (min-width: 640px) { .plans__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1140px) { .plans__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.plan {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.75rem, 2.4vw, 2.25rem);
+  border-radius: var(--r);
+  background: rgba(241, 245, 242, .07);
+  -webkit-backdrop-filter: blur(22px) saturate(140%);
+  backdrop-filter: blur(22px) saturate(140%);
+  transition: transform .7s var(--ease), background-color .7s var(--ease);
+}
+.plan:hover { transform: translateY(-4px); background: rgba(241, 245, 242, .11); }
+.plan__head { font-size: inherit; font-weight: inherit; }
+.plan__name { display: flex; align-items: center; gap: .65rem; font-size: .8125rem; font-weight: 650; letter-spacing: .16em; text-transform: uppercase; color: var(--on-deep-2); }
+.tee { flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--tee); }
+.plan__rate {
+  display: block;
+  margin-top: clamp(2.25rem, 4vw, 3.25rem);
+  font-size: clamp(4rem, 3rem + 2.6vw, 5.5rem);
+  font-weight: 800;
+  font-stretch: 75%;
+  line-height: .9;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+.plan__per { margin-left: .06em; font-size: .3em; font-weight: 700; letter-spacing: .06em; color: var(--leaf); }
+.plan__math { margin-top: .9rem; font-size: .9375rem; color: var(--on-deep-2); }
+.plan__fit { margin: 1.5rem 0 2.25rem; font-size: 1rem; line-height: 1.45; color: var(--on-deep); }
+.plan .btn { width: 100%; margin-top: auto; }
+.plan--walkin { background: rgba(241, 245, 242, .03); }
+.plan--walkin .plan__rate { color: var(--on-deep-2); }
+.btn--ghost { background: rgba(241, 245, 242, .1); color: #fff; }
+.btn--ghost:hover { background: rgba(241, 245, 242, .18); }
+.plans__foot { display: grid; justify-items: center; gap: 1rem; margin-top: 2.75rem; text-align: center; }
+.plans__perk { max-width: 46ch; font-size: 1.0625rem; font-weight: 500; color: var(--on-deep); text-wrap: balance; }
+.fine { font-size: .8125rem; color: var(--ink-3); }
+[data-dark] .fine { color: var(--on-deep-2); }
+
+/* ==========================================================================
+   Bays and tech
+   ========================================================================== */
+.bays { padding-block: var(--section); }
+.shot { position: relative; padding: clamp(1.35rem, 3vw, 2.75rem); border-radius: var(--r); background: var(--deep); color: var(--on-deep); overflow: hidden; }
+.shot::before { content: ""; position: absolute; inset: 0; background: radial-gradient(50% 80% at 85% 100%, rgba(70, 130, 92, .22), transparent 70%); pointer-events: none; }
+.shot__top { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 36px; }
+.shot__cap { font-size: .75rem; font-weight: 650; letter-spacing: .16em; text-transform: uppercase; color: var(--leaf); }
+.shot__replay {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  min-height: 36px;
+  padding: .4rem .95rem;
+  border: 0;
+  border-radius: 7px;
+  background: rgba(241, 245, 242, .08);
+  color: var(--on-deep);
+  font-size: .75rem;
+  font-weight: 650;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+.shot__replay:hover { background: rgba(241, 245, 242, .16); }
+.shot__replay svg { width: 14px; height: 14px; }
+.shot__replay[hidden] { display: none; }
+.shot__stats { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem 1rem; margin-top: clamp(1.75rem, 3vw, 2.75rem); }
+.shot__stats dt { margin-bottom: .55rem; font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--on-deep-2); }
+.shot__stats dd {
+  font-size: clamp(3rem, 2rem + 3vw, 5.25rem);
+  font-weight: 800;
+  font-stretch: 75%;
+  line-height: .95;
+  color: #fff;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.shot__stats small { margin-left: .3em; font-size: .26em; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--leaf); }
+.shot__plot { position: relative; height: clamp(170px, 24vw, 340px); margin-top: clamp(1.5rem, 3vw, 2.5rem); }
+.shot__plot svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.shot__ground { stroke: rgba(241, 245, 242, .1); stroke-width: 1; }
+.stop-a { stop-color: var(--leaf); stop-opacity: .04; }
+.stop-b { stop-color: var(--leaf); stop-opacity: .65; }
+.stop-c { stop-color: #fff; stop-opacity: 1; }
+.shot__glow { fill: none; stroke: var(--leaf); stroke-width: 10; stroke-linecap: round; opacity: .1; }
+.shot__trail { fill: none; stroke: url(#trailGrad); stroke-width: 2.25; stroke-linecap: round; }
+.shot__halo { fill: var(--leaf); opacity: .25; }
+.shot__ball { fill: #fff; }
+.shot__ring { fill: none; stroke: var(--leaf); stroke-width: 1.5; }
+.shot__dot { fill: var(--leaf); }
+@media (min-width: 900px) { .shot__stats { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+.ph--bay { margin-top: 1rem; aspect-ratio: 4 / 3; }
+@media (min-width: 640px) { .ph--bay { aspect-ratio: 16 / 9; } }
+@media (min-width: 1100px) { .ph--bay { aspect-ratio: 21 / 9; } }
+
+.features { list-style: none; padding: 0; display: grid; gap: 2.25rem; margin-top: clamp(3.5rem, 7vw, 6rem); }
+@media (min-width: 640px) { .features { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3rem 2rem; } }
+@media (min-width: 1100px) { .features { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.feature h3 { margin-bottom: .6rem; font-size: 1.625rem; }
+.feature p { max-width: 30ch; color: var(--ink-2); }
+
+/* ==========================================================================
+   Events and gift cards, side by side
+   ========================================================================== */
+.extras { padding-block: var(--section); background: var(--paper); }
+.extras__grid { display: grid; gap: 1rem; }
+.extras__grid > article { display: flex; }
+@media (min-width: 900px) { .extras__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.tile { flex: 1; display: flex; flex-direction: column; overflow: hidden; border-radius: var(--r); background: #fff; transition: transform .7s var(--ease), box-shadow .7s var(--ease); }
+.tile:hover { transform: translateY(-4px); box-shadow: 0 30px 60px -34px rgba(11, 18, 14, .28); }
+.tile .ph { aspect-ratio: 16 / 10; border-radius: 0; }
+.tile__text { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: clamp(1.75rem, 3.5vw, 2.75rem); }
+.tile .kicker { margin-bottom: 1rem; }
+.tile__title { font-size: clamp(2.25rem, 1.5rem + 2vw, 3.5rem); text-wrap: balance; }
+.tile__text p { max-width: 38ch; margin-top: 1rem; color: var(--ink-2); text-wrap: pretty; }
+.tile__text .btn { margin-top: 2rem; }
+
+/* ==========================================================================
+   Visit (footer): map, hours, phone
+   ========================================================================== */
+.visit { padding-block: var(--section) 2.5rem; background: var(--deep); color: var(--on-deep); }
+.visit__top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 2rem 3rem; margin-bottom: clamp(3.5rem, 6vw, 5.5rem); }
+.visit__grid { display: grid; gap: 3rem; }
+@media (min-width: 900px) { .visit__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(3rem, 6vw, 6rem); } }
+.info { display: grid; gap: 2.75rem; align-content: start; }
+.info .kicker { margin-bottom: .75rem; font-size: .75rem; }
+.info p { font-size: 1.25rem; line-height: 1.45; }
+.info .link { margin-top: 1rem; }
+.phone { font-size: clamp(2rem, 1.4rem + 1.8vw, 2.875rem); font-weight: 800; font-stretch: 75%; letter-spacing: .01em; text-decoration: none; transition: color .3s; }
+.phone:hover { color: var(--leaf); }
+.hours { display: grid; gap: .6rem; }
+.hours div { display: flex; justify-content: space-between; gap: 1rem; }
+.hours dt { color: var(--on-deep-2); }
+.hours dd { font-weight: 600; text-align: right; }
+.info .fine { margin-top: 1rem; font-size: .8125rem; }
+.ph--map { --ph-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='none' stroke='%23ffffff' stroke-width='1.5'%3E%3Cpath d='M24 43s13-12.2 13-21.8a13 13 0 1 0-26 0C11 30.8 24 43 24 43z'/%3E%3Ccircle cx='24' cy='21' r='4.8'/%3E%3C/svg%3E"); aspect-ratio: 4 / 3; }
+@media (min-width: 900px) { .ph--map { aspect-ratio: auto; height: 100%; min-height: 340px; } }
+.base { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem 2.5rem; margin-top: clamp(5rem, 9vw, 8rem); font-size: .75rem; color: var(--on-deep-2); }
+.base .logo { color: var(--on-deep); }
+.base .logo img { display: block; width: auto; height: 96px; }
+.base nav { display: flex; flex-wrap: wrap; gap: .75rem 1.75rem; }
+.base nav a { font-weight: 600; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; transition: color .3s; }
+.base nav a:hover { color: var(--on-deep); }
+.base p { margin-left: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Nav -->
+<header class="nav is-dark" data-nav>
+  <div class="wrap nav__in">
+    <a class="logo" href="#top" aria-label="Thibodaux T-Box, back to top">
+      <span class="logo__stack">
+        <img class="logo__pos" src="data:image/png;base64,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" width="331" height="96" alt="TBOX Golf Simulators">
+        <img class="logo__rev" src="data:image/png;base64,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" width="331" height="96" alt="" aria-hidden="true">
+      </span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#how">How it works</a>
+      <a href="#membership">Membership</a>
+      <a href="#bays">Bays</a>
+      <a href="#events">Events</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__login" data-login>Member Login</a>
+      <a class="btn btn--nav" data-booking>Book Now</a>
+      <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" inert>
+  <nav class="menu__links" aria-label="Menu">
+    <a href="#how" style="--i:0">How it works</a>
+    <a href="#membership" style="--i:1">Membership</a>
+    <a href="#bays" style="--i:2">Bays</a>
+    <a href="#events" style="--i:3">Events</a>
+    <a href="#gift-cards" style="--i:4">Gift cards</a>
+    <a href="#visit" style="--i:5">Visit</a>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn btn--primary" data-booking>Book a Tee Time</a>
+    <div class="menu__meta">
+      <a data-login>Member Login</a>
+      <a href="tel:+19855550142">(985) 555-0142</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- 1. Hero -->
+  <section class="hero" id="top" aria-labelledby="hero-title" data-dark>
+    <div class="hero__media">
+      <div class="ph ph--dark ph--bleed ph--hero" role="img" aria-label="Photo placeholder: a golfer mid-swing under a spotlight in a dark bay">
+        <div class="ph__fill"></div>
+        <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.75" y="4" width="12.5" height="9" rx="2"/><circle cx="8" cy="8.5" r="2.4"/><path d="M5.6 4l1-1.7h2.8l1 1.7"/></svg><span>Hero photo · Golfer mid-swing under a spotlight, right third of frame · 2880 × 1800</span></span>
+      </div>
+      <div class="hero__shade"></div>
+    </div>
+    <div class="hero__content">
+      <div class="wrap">
+        <p class="hero__kicker" data-hero-el>Indoor golf simulator <strong>Thibodaux, Louisiana</strong></p>
+        <h1 class="hero__title" id="hero-title" data-split><span class="ln">Golf,</span> <em class="ln">unlocked.</em></h1>
+        <p class="hero__lead" data-hero-el>Three private simulator bays, opening soon. Founding memberships are available now.</p>
+        <div class="hero__ctas" data-hero-el>
+          <a class="btn btn--primary" data-booking>Book a Tee Time</a>
+          <a class="btn btn--light" href="#membership">Become a Member</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Founding member countdown: days remaining only -->
+  <section class="founding" id="founding" aria-labelledby="founding-title">
+    <div class="wrap founding__grid">
+      <p class="count">
+        <span class="sr-only"><span data-days></span> <span data-days-unit>days</span> left to join as a founding member.</span>
+        <span class="odo" data-odo aria-hidden="true"></span>
+        <span class="count__label" aria-hidden="true" data-reveal><span data-days-unit>days</span> left</span>
+      </p>
+      <div>
+        <p class="kicker" data-reveal>Founding membership</p>
+        <h2 class="h2" id="founding-title" data-split>Join as a <em>founding member.</em></h2>
+        <p class="lead founding__copy" data-reveal>Founding memberships are only offered before we open. Join by opening day, <span data-deadline>November 30</span>, and you are in from the very first swing.</p>
+        <a class="btn btn--primary" href="#membership" data-reveal>See Membership Rates</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. How it works -->
+  <section class="how" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <header class="head head--center">
+        <p class="kicker" data-reveal>How it works</p>
+        <h2 class="h2" id="how-title" data-split>Book. Unlock. <em>Play.</em></h2>
+        <p class="lead" data-reveal>T-Box is fully automated, so your bay is ready when you are. No front desk and no waiting on anyone.</p>
+      </header>
+      <ul class="steps">
+        <li data-reveal>
+          <div class="step">
+            <div class="step__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect class="d" pathLength="1" x="6.5" y="10" width="35" height="31.5" rx="7"/>
+                <path class="d" pathLength="1" d="M6.5 19h35"/>
+                <path class="d" pathLength="1" d="M15.5 6.5v7M32.5 6.5v7"/>
+                <path class="d" pathLength="1" d="M17.5 30.5l4.5 4.5 9-9"/>
+              </svg>
+            </div>
+            <h3 class="display step__title">Book online</h3>
+            <p class="step__copy">Pick a bay and a time from your phone. It takes about a minute.</p>
+          </div>
+        </li>
+        <li data-reveal>
+          <div class="step">
+            <div class="step__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect class="d" pathLength="1" x="11" y="4.5" width="26" height="39" rx="7"/>
+                <g fill="currentColor" stroke="none">
+                  <circle class="k" data-code="3" cx="18" cy="13.5" r="2"/><circle class="k" data-code="4" cx="24" cy="13.5" r="2"/><circle class="k" cx="30" cy="13.5" r="2"/>
+                  <circle class="k" data-code="1" cx="18" cy="20.5" r="2"/><circle class="k" cx="24" cy="20.5" r="2"/><circle class="k" cx="30" cy="20.5" r="2"/>
+                  <circle class="k" cx="18" cy="27.5" r="2"/><circle class="k" data-code="2" cx="24" cy="27.5" r="2"/><circle class="k" cx="30" cy="27.5" r="2"/>
+                  <circle class="k" cx="18" cy="34.5" r="2"/><circle class="k" cx="24" cy="34.5" r="2"/><circle class="k" cx="30" cy="34.5" r="2"/>
+                </g>
+              </svg>
+            </div>
+            <h3 class="display step__title">Unlock with your code</h3>
+            <p class="step__copy">Your confirmation comes with a door code. Tap it in at the keypad and walk right in.</p>
+          </div>
+        </li>
+        <li data-reveal>
+          <div class="step">
+            <div class="step__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle class="d" pathLength="1" cx="24" cy="16.5" r="10.5"/>
+                <path class="d" pathLength="1" d="M15 29h18c0 0-3.2 3.6-6.5 4.4V40.5a2.5 2.5 0 0 1-5 0v-7.1C18.2 32.6 15 29 15 29z"/>
+                <g fill="currentColor" stroke="none">
+                  <circle class="k" cx="20.6" cy="13.4" r="1.2"/><circle class="k" cx="25.6" cy="12" r="1.2"/><circle class="k" cx="27.8" cy="17" r="1.2"/><circle class="k" cx="22.6" cy="18.8" r="1.2"/>
+                </g>
+              </svg>
+            </div>
+            <h3 class="display step__title">Play</h3>
+            <p class="step__copy">Pick a course or head to the range. The bay is yours until your time is up.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. Membership teaser: each headline is the effective hourly rate (monthly price divided by included hours) -->
+  <section class="plans" id="membership" aria-labelledby="plans-title" data-dark>
+    <div class="plans__bg" aria-hidden="true">
+      <div class="ph ph--dark ph--bleed" data-parallax>
+        <div class="ph__fill"></div>
+        <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.75" y="4" width="12.5" height="9" rx="2"/><circle cx="8" cy="8.5" r="2.4"/><path d="M5.6 4l1-1.7h2.8l1 1.7"/></svg><span>Background photo · Club and ball on turf, low light · 2880 × 1600</span></span>
+      </div>
+      <div class="plans__shade"></div>
+    </div>
+    <div class="wrap">
+      <header class="head head--center">
+        <p class="kicker" data-reveal>Membership</p>
+        <h2 class="h2" id="plans-title" data-split>Play more. <em>Pay less.</em></h2>
+        <p class="lead" data-reveal>Every membership comes with bay hours each month. The more you play, the less each hour costs.</p>
+      </header>
+      <ul class="plans__grid">
+        <li data-reveal>
+          <div class="plan plan--walkin">
+            <h3 class="plan__head">
+              <span class="plan__name">Walk-in</span>
+              <span class="plan__rate">$40<span class="plan__per">/HR</span></span>
+            </h3>
+            <p class="plan__math">Monday to Thursday · $50 Friday to Sunday</p>
+            <p class="plan__fit">No membership needed. Book any open tee time.</p>
+            <a class="btn btn--ghost" data-booking>Book a Tee Time</a>
+          </div>
+        </li>
+        <li data-reveal>
+          <div class="plan" style="--tee: var(--tee-1)">
+            <h3 class="plan__head">
+              <span class="plan__name"><span class="tee" aria-hidden="true"></span>Par</span>
+              <span class="plan__rate">$25<span class="plan__per">/HR</span></span>
+            </h3>
+            <p class="plan__math">$100 a month · 4 bay hours</p>
+            <p class="plan__fit">Book up to 3 days ahead.</p>
+            <a class="btn btn--primary" href="/memberships#par">Join Now</a>
+          </div>
+        </li>
+        <li data-reveal>
+          <div class="plan" style="--tee: var(--tee-2)">
+            <h3 class="plan__head">
+              <span class="plan__name"><span class="tee" aria-hidden="true"></span>Birdie</span>
+              <span class="plan__rate">$21<span class="plan__per">/HR</span></span>
+            </h3>
+            <p class="plan__math">$125 a month · 6 bay hours</p>
+            <p class="plan__fit">Book up to 7 days ahead.</p>
+            <a class="btn btn--primary" href="/memberships#birdie">Join Now</a>
+          </div>
+        </li>
+        <li data-reveal>
+          <div class="plan" style="--tee: var(--leaf)">
+            <h3 class="plan__head">
+              <span class="plan__name"><span class="tee" aria-hidden="true"></span>Eagle</span>
+              <span class="plan__rate">$15<span class="plan__per">/HR</span></span>
+            </h3>
+            <p class="plan__math">$150 a month · 10 bay hours</p>
+            <p class="plan__fit">Book up to 10 days ahead. Our best rate.</p>
+            <a class="btn btn--primary" href="/memberships#eagle">Join Now</a>
+          </div>
+        </li>
+      </ul>
+      <div class="plans__foot" data-reveal>
+        <p class="plans__perk">Every membership includes <span style="white-space:nowrap">members-only</span> hours, 5 to 9 AM and 8 to 11 PM.</p>
+        <a class="link" href="/memberships">Compare all memberships <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5 8 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <p class="fine">Hourly rate is the monthly price divided by included bay hours, rounded to the nearest dollar. Members can play up to 2 hours a day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Bays and tech -->
+  <section class="bays" id="bays" aria-labelledby="bays-title">
+    <div class="wrap">
+      <header class="head head--split">
+        <div>
+          <p class="kicker" data-reveal>The bays</p>
+          <h2 class="h2" id="bays-title" data-split>Every shot, <em>measured.</em></h2>
+        </div>
+        <p class="lead" data-reveal>Three private bays with launch monitor cameras that read every swing the moment you make it, then play the shot out on screen.</p>
+      </header>
+
+      <figure class="shot" data-shot data-reveal>
+        <div class="shot__top">
+          <figcaption class="shot__cap">Sample drive</figcaption>
+          <button class="shot__replay" type="button" hidden>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.25 8.5a5.25 5.25 0 1 1-1.54-3.96"/><path d="M12 1.9v2.9H9.1"/></svg>
+            Replay
+          </button>
+        </div>
+        <dl class="shot__stats">
+          <div><dt>Ball speed</dt><dd><span data-stat="161">161</span><small>mph</small></dd></div>
+          <div><dt>Launch</dt><dd><span data-stat="12.8" data-dec="1">12.8</span>°</dd></div>
+          <div><dt>Spin</dt><dd><span data-stat="2540">2,540</span><small>rpm</small></dd></div>
+          <div><dt>Carry</dt><dd><span data-carry="262">262</span><small>yds</small></dd></div>
+        </dl>
+        <div class="shot__plot">
+          <svg role="img" aria-label="Ball flight of a sample drive: 161 mph ball speed, 12.8 degree launch, 2,540 rpm spin, 262 yard carry" focusable="false">
+            <defs>
+              <linearGradient id="trailGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100" y2="0">
+                <stop class="stop-a" offset="0"/>
+                <stop class="stop-b" offset=".45"/>
+                <stop class="stop-c" offset="1"/>
+              </linearGradient>
+            </defs>
+            <line class="shot__ground"/>
+            <path class="shot__glow"/>
+            <path class="shot__trail"/>
+            <g class="shot__land"><circle class="shot__ring" r="6"/><circle class="shot__dot" r="3"/></g>
+            <circle class="shot__halo" r="12"/>
+            <circle class="shot__ball" r="4.5"/>
+          </svg>
+        </div>
+      </figure>
+
+      <div class="ph ph--bay" role="img" aria-label="Photo placeholder: wide shot of a private bay with the screen on" data-parallax data-reveal>
+        <div class="ph__fill"></div>
+        <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.75" y="4" width="12.5" height="9" rx="2"/><circle cx="8" cy="8.5" r="2.4"/><path d="M5.6 4l1-1.7h2.8l1 1.7"/></svg><span>Bay photo · Wide shot of a private bay, screen on · 2560 × 1100</span></span>
+      </div>
+
+      <ul class="features">
+        <li class="feature" data-reveal><h3 class="display">Three private bays</h3><p>Your own room and your own screen. Nobody waiting behind you.</p></li>
+        <li class="feature" data-reveal><h3 class="display">Rain or shine</h3><p>About 60 inches of rain a year and months over 90 degrees. None of it reaches the bay.</p></li>
+        <li class="feature" data-reveal><h3 class="display">A range in town</h3><p>Thibodaux has no driving range. Now there is a place to practice all year.</p></li>
+        <li class="feature" data-reveal><h3 class="display">Practice with purpose</h3><p>Every swing is measured, so you can see exactly what changed.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. Events + Gift cards, side by side -->
+  <section class="extras" id="events" aria-label="Events and gift cards">
+    <div class="wrap extras__grid">
+      <article data-reveal>
+        <div class="tile">
+          <div class="ph" role="img" aria-label="Photo placeholder: friends gathered around a bay" data-parallax>
+            <div class="ph__fill"></div>
+            <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.75" y="4" width="12.5" height="9" rx="2"/><circle cx="8" cy="8.5" r="2.4"/><path d="M5.6 4l1-1.7h2.8l1 1.7"/></svg><span>Event photo · Friends around a bay · 1600 × 1000</span></span>
+          </div>
+          <div class="tile__text">
+            <p class="kicker">Events</p>
+            <h2 class="display tile__title">Bring the whole crew.</h2>
+            <p>Company outings, birthdays, fantasy football drafts and game-day watch parties for 4 to 25 people. Catering available. BYOB welcome.</p>
+            <a class="btn btn--soft" href="/events">Plan an Event <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5 8 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article id="gift-cards" data-reveal>
+        <div class="tile">
+          <div class="ph" role="img" aria-label="Photo placeholder: a gift card resting on a bay side table" data-parallax>
+            <div class="ph__fill"></div>
+            <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.75" y="4" width="12.5" height="9" rx="2"/><circle cx="8" cy="8.5" r="2.4"/><path d="M5.6 4l1-1.7h2.8l1 1.7"/></svg><span>Gift card photo · Card on a bay side table · 1600 × 1000</span></span>
+          </div>
+          <div class="tile__text">
+            <p class="kicker">Gift cards</p>
+            <h2 class="display tile__title">Give a tee time.</h2>
+            <p>Any amount, good for bay time. Works like a punch pass for the golfer in your life.</p>
+            <a class="btn btn--soft" data-booking>Buy a Gift Card <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5 8 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<!-- 7. Footer: map, hours, phone -->
+<footer class="visit" id="visit" aria-labelledby="visit-title" data-dark>
+  <div class="wrap">
+    <div class="visit__top">
+      <div>
+        <p class="kicker" data-reveal>Visit</p>
+        <h2 class="h2" id="visit-title" data-split>See you on the <em>tee.</em></h2>
+      </div>
+      <a class="btn btn--primary" data-booking data-reveal>Book a Tee Time</a>
+    </div>
+    <div class="visit__grid">
+      <div class="info" data-reveal>
+        <div>
+          <h3 class="kicker">Address</h3>
+          <p>Street address coming soon<br>Thibodaux, LA 70301</p>
+          <a class="link" href="https://maps.google.com/?q=Thibodaux,+LA">Get directions <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5 8 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div>
+          <h3 class="kicker">Phone</h3>
+          <a class="phone" href="tel:+19855550142">(985) 555-0142</a>
+        </div>
+        <div>
+          <h3 class="kicker">Hours</h3>
+          <dl class="hours">
+            <div><dt>Members only</dt><dd>5 AM to 9 AM</dd></div>
+            <div><dt>Open to everyone</dt><dd>9 AM to 8 PM</dd></div>
+            <div><dt>Members only</dt><dd>8 PM to 11 PM</dd></div>
+          </dl>
+          <p class="fine">Opening soon. Final hours are set at launch.</p>
+        </div>
+      </div>
+      <div class="ph ph--dark ph--map" role="img" aria-label="Map placeholder: map of the Thibodaux location" data-reveal>
+        <div class="ph__fill"></div>
+        <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M8 14.2s4.6-4.3 4.6-7.7a4.6 4.6 0 1 0-9.2 0c0 3.4 4.6 7.7 4.6 7.7z"/><circle cx="8" cy="6.5" r="1.7"/></svg><span>Map · Embed a Google Map of the address here</span></span>
+      </div>
+    </div>
+    <div class="base">
+      <a class="logo" href="#top" aria-label="Thibodaux T-Box, back to top"><img src="data:image/png;base64,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" width="281" height="240" alt="Thibodaux TBOX Golf Simulators"></a>
+      <nav aria-label="Footer">
+        <a data-booking>Book a Tee Time</a>
+        <a data-login>Member Login</a>
+        <a href="/memberships">Memberships</a>
+        <a href="/events">Events</a>
+        <a href="/gift-cards">Gift Cards</a>
+        <a data-social="instagram" hidden>Instagram</a>
+        <a data-social="facebook" hidden>Facebook</a>
+      </nav>
+      <p>© <span data-year>2026</span> Thibodaux T-Box</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ==========================================================================
+   Settings
+   ========================================================================== */
+// Booking platform link (Golf O'Clock or Woosh). Every Book Now, Book a Tee Time and gift card button reads it.
+const BOOKING_URL = 'https://example.com/book';
+
+// Member login on the booking platform.
+const MEMBER_LOGIN_URL = 'https://example.com/login';
+
+// Target opening day (Central Time). Founding memberships close then. The countdown shows days only.
+const FOUNDING_DEADLINE = '2026-11-30T23:59:59-06:00';
+
+// Social links. Each one appears in the footer once it has a URL.
+const SOCIAL = { instagram: '', facebook: '' };
+
+/* ========================================================================== */
+(() => {
+  const root = document.documentElement;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s, c = document) => c.querySelector(s);
+  const $$ = (s, c = document) => [...c.querySelectorAll(s)];
+  let lenis = null;
+
+  /* Tracking: GTM dataLayer, plus the Meta Pixel when it is present ------- */
+  function track(event, data) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(Object.assign({ event }, data));
+    if (typeof window.fbq === 'function') window.fbq('trackCustom', event, data);
+  }
+  const where = (el) => (el.closest('[id]') ? el.closest('[id]').id : 'nav');
+
+  /* Links from settings ---------------------------------------------------- */
+  function wireLinks() {
+    $$('[data-booking]').forEach((a) => {
+      a.href = BOOKING_URL;
+      a.addEventListener('click', () => track('book_now_click', { cta_text: a.textContent.trim(), cta_location: where(a) }));
+    });
+    $$('[data-login]').forEach((a) => { a.href = MEMBER_LOGIN_URL; });
+    $$('a[href^="/memberships#"]').forEach((a) => {
+      a.addEventListener('click', () => track('join_now_click', { plan: a.getAttribute('href').split('#')[1] }));
+    });
+    $$('[data-social]').forEach((a) => {
+      const url = SOCIAL[a.dataset.social];
+      if (url) { a.href = url; a.hidden = false; a.target = '_blank'; a.rel = 'noopener'; }
+    });
+  }
+
+  /* Founding countdown (days only, never spots) ---------------------------- */
+  function founding() {
+    const section = $('#founding');
+    if (!section) return 0;
+    const end = new Date(FOUNDING_DEADLINE);
+    const days = Math.ceil((end.getTime() - Date.now()) / 86400000);
+    if (!(days > 0)) { section.hidden = true; return 0; }
+    $$('[data-days]', section).forEach((n) => { n.textContent = days; });
+    $$('[data-days-unit]', section).forEach((n) => { n.textContent = days === 1 ? 'day' : 'days'; });
+    const date = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', timeZone: 'America/Chicago' }).format(end);
+    $$('[data-deadline]', section).forEach((n) => { n.textContent = date; });
+    return days;
+  }
+
+  // Odometer: each digit is a strip of 9..0 twice, so it rolls downward like a countdown.
+  const STRIP = '98765432109876543210';
+  const stripY = (index) => -index * 5; // yPercent, each entry is 1/20 of the strip
+  function buildOdometer(el, value) {
+    const digits = String(value).split('').map(Number);
+    const cells = [...STRIP].map((n) => `<span>${n}</span>`).join('');
+    el.innerHTML = digits.map(() => `<span class="odo__col"><span class="odo__strip">${cells}</span></span>`).join('');
+    return $$('.odo__strip', el).map((strip, i) => ({ strip, stop: 10 + (9 - digits[i]) }));
+  }
+
+  /* Nav turns dark over dark sections --------------------------------------- */
+  function navState() {
+    const nav = $('[data-nav]');
+    const darks = $$('[data-dark]');
+    let queued = false;
+    const update = () => {
+      queued = false;
+      const mid = nav.offsetHeight / 2;
+      nav.classList.toggle('is-dark', darks.some((s) => {
+        const r = s.getBoundingClientRect();
+        return r.top <= mid && r.bottom >= mid;
+      }));
+    };
+    update();
+    window.addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(update); } }, { passive: true });
+    window.addEventListener('resize', update);
+  }
+
+  /* Mobile menu ------------------------------------------------------------ */
+  function menu() {
+    const nav = $('[data-nav]');
+    const btn = $('.nav__menu');
+    const panel = $('#menu');
+    const isOpen = () => panel.classList.contains('is-open');
+    const open = () => {
+      panel.classList.add('is-open');
+      panel.inert = false;
+      btn.setAttribute('aria-expanded', 'true');
+      btn.setAttribute('aria-label', 'Close menu');
+      nav.classList.add('is-menu');
+      root.classList.add('menu-open');
+      if (lenis) lenis.stop();
+    };
+    const close = () => {
+      if (!isOpen()) return;
+      panel.classList.remove('is-open');
+      panel.inert = true;
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-label', 'Open menu');
+      nav.classList.remove('is-menu');
+      root.classList.remove('menu-open');
+      if (lenis) lenis.start();
+    };
+    btn.addEventListener('click', () => (isOpen() ? close() : open()));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && isOpen()) { close(); btn.focus(); } });
+    window.matchMedia('(min-width: 1024px)').addEventListener('change', (e) => { if (e.matches) close(); });
+    return { close };
+  }
+
+  /* In-page links glide with Lenis ------------------------------------------ */
+  function anchors(menuApi) {
+    $$('a[href^="#"]').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href').slice(1);
+        const target = id && document.getElementById(id);
+        if (!target) return;
+        e.preventDefault();
+        menuApi.close();
+        const toTop = id === 'top';
+        const offset = toTop ? 0 : 1 - $('[data-nav]').offsetHeight;
+        if (lenis) {
+          lenis.scrollTo(toTop ? 0 : target, { offset, duration: 1.5, easing: (t) => 1 - Math.pow(1 - t, 4) });
+        } else {
+          const y = toTop ? 0 : target.getBoundingClientRect().top + window.scrollY + offset;
+          window.scrollTo({ top: y, behavior: reduceMotion ? 'auto' : 'smooth' });
+        }
+        if (!toTop) { target.setAttribute('tabindex', '-1'); target.focus({ preventScroll: true }); }
+      });
+    });
+  }
+
+  /* Sample drive: ball flight, tracer and launch monitor numbers ------------ */
+  function shot() {
+    const fig = $('[data-shot]');
+    if (!fig) return null;
+    const plot = $('.shot__plot', fig);
+    const svg = $('svg', plot);
+    const trail = $('.shot__trail', svg);
+    const glow = $('.shot__glow', svg);
+    const ball = $('.shot__ball', svg);
+    const halo = $('.shot__halo', svg);
+    const ground = $('.shot__ground', svg);
+    const land = $('.shot__land', svg);
+    const grad = $('#trailGrad', svg);
+    const replay = $('.shot__replay', fig);
+    const carryEl = $('[data-carry]', fig);
+    const stats = $$('[data-stat]', fig);
+    const CARRY = Number(carryEl.dataset.carry);
+    const RANGE = 300;
+    const state = { p: 1 };
+    let L = 0, x0 = 0, x1 = 1;
+
+    // Normalized cubic Bezier for a drive: steady climb, apex about two thirds out, steeper fall.
+    const A = 0.36, K1 = 0.62, B = 0.8, K2 = 1.18;
+    let apex = 0;
+    for (let i = 0; i <= 200; i++) {
+      const t = i / 200;
+      apex = Math.max(apex, 3 * (1 - t) ** 2 * t * K1 + 3 * (1 - t) * t * t * K2);
+    }
+    const fmt = (v, dec) => (dec ? v.toFixed(dec) : Math.round(v).toLocaleString('en-US'));
+
+    function render() {
+      const len = L * state.p;
+      trail.style.strokeDashoffset = L - len;
+      glow.style.strokeDashoffset = L - len;
+      const pt = trail.getPointAtLength(len);
+      ball.setAttribute('cx', pt.x); ball.setAttribute('cy', pt.y);
+      halo.setAttribute('cx', pt.x); halo.setAttribute('cy', pt.y);
+      const f = Math.min(1, Math.max(0, (pt.x - x0) / (x1 - x0)));
+      carryEl.textContent = Math.round(CARRY * f);
+    }
+
+    function layout() {
+      const W = plot.clientWidth;
+      const H = plot.clientHeight;
+      if (!W || !H) return;
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      const gy = H - 8, top = 12, pad = 6;
+      const xAt = (yd) => pad + (W - pad * 2) * (yd / RANGE);
+      x0 = xAt(0); x1 = xAt(CARRY);
+      const sx = x1 - x0, sy = (gy - top) / apex;
+      const d = `M${x0} ${gy} C${x0 + A * sx} ${gy - K1 * sy} ${x0 + B * sx} ${gy - K2 * sy} ${x1} ${gy}`;
+      trail.setAttribute('d', d);
+      glow.setAttribute('d', d);
+      L = trail.getTotalLength();
+      trail.style.strokeDasharray = `${L} ${L}`;
+      glow.style.strokeDasharray = `${L} ${L}`;
+      ground.setAttribute('x1', 0); ground.setAttribute('x2', W);
+      ground.setAttribute('y1', gy); ground.setAttribute('y2', gy);
+      grad.setAttribute('x1', x0); grad.setAttribute('x2', x1);
+      land.setAttribute('transform', `translate(${x1} ${gy})`);
+      render();
+    }
+
+    function prime() {
+      state.p = 0;
+      render();
+      land.style.opacity = 0;
+      stats.forEach((el) => { el.textContent = fmt(0, Number(el.dataset.dec || 0)); });
+    }
+
+    function play() {
+      gsap.killTweensOf(state);
+      prime();
+      const tl = gsap.timeline({ onComplete: () => { replay.hidden = false; } });
+      stats.forEach((el) => {
+        const o = { v: 0 };
+        const dec = Number(el.dataset.dec || 0);
+        tl.to(o, { v: Number(el.dataset.stat), duration: 1, ease: 'expo.out', onUpdate: () => { el.textContent = fmt(o.v, dec); } }, 0.12);
+      });
+      tl.to(state, { p: 1, duration: 2.5, ease: 'power1.out', onUpdate: render }, 0.12)
+        .to(land, { opacity: 1, duration: 0.25 }, '>-0.05')
+        .fromTo($('.shot__ring', land), { scale: 1, opacity: 1, transformOrigin: '50% 50%' }, { scale: 3.4, opacity: 0, duration: 1.2, ease: 'expo.out' }, '<');
+    }
+
+    new ResizeObserver(layout).observe(plot);
+    layout();
+    replay.addEventListener('click', play);
+    return {
+      prime,
+      play,
+      final() { state.p = 1; render(); land.style.opacity = 1; },
+    };
+  }
+
+  /* Split a headline into masked words, keeping <em> and line spans --------- */
+  function splitWords(el) {
+    el.setAttribute('aria-label', el.textContent.trim().replace(/\s+/g, ' '));
+    const wrap = (text) => text.split(/(\s+)/).map((t) => {
+      if (!t) return '';
+      if (/^\s+$/.test(t)) return ' ';
+      return `<span class="w" aria-hidden="true"><span>${t}</span></span>`;
+    }).join('');
+    [...el.childNodes].forEach((node) => {
+      if (node.nodeType === 3) {
+        const holder = document.createElement('span');
+        holder.innerHTML = wrap(node.textContent);
+        node.replaceWith(...holder.childNodes);
+      } else if (node.nodeType === 1) {
+        node.innerHTML = wrap(node.textContent);
+      }
+    });
+    return $$('.w > span', el);
+  }
+
+  /* Motion ----------------------------------------------------------------- */
+  function motion(days, shotApi) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    if (window.Lenis) {
+      lenis = new Lenis({ lerp: 0.1, smoothWheel: true });
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add((time) => lenis.raf(time * 1000));
+      gsap.ticker.lagSmoothing(0);
+    }
+
+    // Headlines rise word by word.
+    const heroTitle = $('.hero__title');
+    const heroWords = splitWords(heroTitle);
+    gsap.set(heroWords, { yPercent: 118 });
+    gsap.set(heroTitle, { opacity: 1 });
+    $$('[data-split]').filter((el) => el !== heroTitle).forEach((el) => {
+      const words = splitWords(el);
+      gsap.set(words, { yPercent: 118 });
+      gsap.set(el, { opacity: 1 });
+      ScrollTrigger.create({
+        trigger: el,
+        start: 'top 88%',
+        once: true,
+        onEnter: () => gsap.to(words, { yPercent: 0, duration: 1.3, ease: 'expo.out', stagger: 0.07 }),
+      });
+    });
+
+    // Hero entrance.
+    const [heroKicker, ...heroRest] = $$('.hero [data-hero-el]');
+    gsap.timeline({ defaults: { ease: 'expo.out' } })
+      .fromTo('.hero .ph__fill', { scale: 1.16 }, { scale: 1, duration: 2.8, ease: 'power3.out' }, 0)
+      .to(heroKicker, { opacity: 1, y: 0, duration: 1.3 }, 0.25)
+      .to(heroWords, { yPercent: 0, duration: 1.5, stagger: 0.1 }, 0.3)
+      .to(heroRest, { opacity: 1, y: 0, duration: 1.4, stagger: 0.1 }, 0.75);
+
+    // Hero settles into a rounded card as you scroll away.
+    gsap.to('.hero__media', {
+      scale: 0.94, borderRadius: 28, ease: 'none',
+      scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true },
+    });
+    gsap.to('.hero__content', {
+      y: -80, opacity: 0, ease: 'none',
+      scrollTrigger: { trigger: '.hero', start: 'top top', end: '60% top', scrub: true },
+    });
+
+    // Fade up everything marked data-reveal, in small staggered batches.
+    ScrollTrigger.batch('[data-reveal]', {
+      start: 'top 90%',
+      once: true,
+      onEnter: (els) => gsap.to(els, {
+        opacity: 1, y: 0, duration: 1.2, ease: 'expo.out', stagger: 0.09, overwrite: true,
+        onComplete: () => els.forEach((el) => { el.removeAttribute('data-reveal'); gsap.set(el, { clearProps: 'opacity,transform' }); }),
+      }),
+    });
+
+    // Countdown digits roll down to today's number.
+    const odo = $('[data-odo]');
+    if (odo && days) {
+      const cols = buildOdometer(odo, days);
+      ScrollTrigger.create({
+        trigger: odo,
+        start: 'top 85%',
+        once: true,
+        onEnter: () => {
+          gsap.to(odo, { opacity: 1, duration: 0.5, ease: 'power2.out' });
+          cols.forEach(({ strip, stop }, i) => {
+            gsap.fromTo(strip, { yPercent: 0 }, { yPercent: stripY(stop), duration: 2.4 + i * 0.35, ease: 'expo.out', delay: i * 0.06 });
+          });
+        },
+      });
+    }
+
+    // How it works: icons draw themselves and the keypad taps in a code.
+    const steps = $$('.step');
+    steps.forEach((step) => {
+      gsap.set($$('.d', step), { strokeDasharray: 1, strokeDashoffset: 1 });
+      gsap.set($$('.k', step), { opacity: 0, scale: 0.3, transformOrigin: '50% 50%' });
+    });
+    ScrollTrigger.create({
+      trigger: '.steps',
+      start: 'top 80%',
+      once: true,
+      onEnter: () => {
+        const tl = gsap.timeline({ delay: 0.2 });
+        steps.forEach((step, i) => {
+          const at = i * 0.3;
+          tl.to($$('.d', step), { strokeDashoffset: 0, duration: 1.1, ease: 'power2.inOut', stagger: 0.12 }, at)
+            .to($$('.k', step), { opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(2.4)', stagger: 0.035 }, at + 0.5);
+          const code = $$('.k[data-code]', step).sort((a, b) => a.dataset.code - b.dataset.code);
+          if (code.length) {
+            tl.to(code, { keyframes: [{ scale: 1.75, duration: 0.14 }, { scale: 1, duration: 0.32 }], ease: 'power2.out', stagger: 0.2 }, at + 1.15);
+          }
+        });
+      },
+    });
+
+    // Membership: the dark band widens to full bleed as it arrives.
+    const insetX = () => (window.innerWidth < 640 ? 10 : 28);
+    const radius = () => (window.innerWidth < 640 ? 20 : 32);
+    gsap.fromTo('.plans__bg',
+      { clipPath: () => `inset(0px ${insetX()}px 0px ${insetX()}px round ${radius()}px)` },
+      {
+        clipPath: 'inset(0px 0px 0px 0px round 0px)', ease: 'none',
+        scrollTrigger: { trigger: '.plans', start: 'top bottom', end: 'top 12%', scrub: true, invalidateOnRefresh: true },
+      });
+
+    // Sample drive fires when the panel comes into view.
+    if (shotApi) {
+      shotApi.prime();
+      ScrollTrigger.create({ trigger: '.shot__plot', start: 'bottom 92%', once: true, onEnter: shotApi.play });
+    }
+
+    // Photos ease out of a slight zoom as they pass.
+    $$('[data-parallax]').forEach((el) => {
+      gsap.fromTo($('.ph__fill', el), { scale: 1.14 }, {
+        scale: 1, ease: 'none',
+        scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom 35%', scrub: true },
+      });
+    });
+
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => ScrollTrigger.refresh());
+  }
+
+  /* Static fallback: reduced motion, or the libraries did not load ---------- */
+  function staticPage(days, shotApi) {
+    if (window.gsap) gsap.set('[data-reveal], [data-hero-el], [data-split], [data-split] .w > span, .odo, .step .d, .step .k', { clearProps: 'all' });
+    root.classList.remove('js');
+    const odo = $('[data-odo]');
+    if (odo && days) {
+      buildOdometer(odo, days).forEach(({ strip, stop }) => { strip.style.transform = `translateY(${stripY(stop)}%)`; });
+    }
+    if (shotApi) shotApi.final();
+  }
+
+  function init() {
+    wireLinks();
+    $$('[data-year]').forEach((n) => { n.textContent = new Date().getFullYear(); });
+    const days = founding();
+    const menuApi = menu();
+    anchors(menuApi);
+    navState();
+    const shotApi = shot();
+
+    const canAnimate = !reduceMotion && window.gsap && window.ScrollTrigger && root.classList.contains('js');
+    if (canAnimate) {
+      try {
+        motion(days, shotApi);
+        root.classList.add('is-ready');
+        return;
+      } catch (err) {
+        console.error(err);
+      }
+    }
+    staticPage(days, shotApi);
+    root.classList.add('is-ready');
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+})();
+</script>
+</body>
+</html>
