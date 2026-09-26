@@ -11,12 +11,12 @@
 <link rel="apple-touch-icon" href="/assets/tbox-apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400..500&family=Mona+Sans:wdth,wght@75..100,400..900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..100,400..800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
 <!-- Google Tag Manager: paste the container snippet (GTM-XXXXXXX) here. Load GA4 and the Meta Pixel through GTM. -->
 <script>window.dataLayer = window.dataLayer || [];</script>
 <script>
-  // Animated elements start hidden. If the motion scripts never arrive, show everything after 3.5s.
+  // The hero waits for the motion script. If it never arrives, show everything after 3.5s.
   document.documentElement.classList.add('js');
   setTimeout(function () {
     if (!document.documentElement.classList.contains('is-ready')) document.documentElement.classList.remove('js');
@@ -45,7 +45,7 @@
       <a href="/about">About</a>
     </nav>
     <div class="nav__actions">
-      <a class="nav__login" data-login>Member Login</a>
+      <a class="nav__login" data-login>Member login</a>
       <a class="btn btn--nav" data-booking>Book Now</a>
       <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
     </div>
@@ -54,16 +54,16 @@
 
 <div class="menu" id="menu" inert>
   <nav class="menu__links" aria-label="Menu">
-    <a href="/" style="--i:0">Home</a>
-    <a href="/memberships" style="--i:1" aria-current="page">Memberships</a>
-    <a href="/events" style="--i:2">Events</a>
-    <a href="/gift-cards" style="--i:3">Gift cards</a>
-    <a href="/about" style="--i:4">About</a>
+    <a href="/">Home</a>
+    <a href="/memberships" aria-current="page">Memberships</a>
+    <a href="/events">Events</a>
+    <a href="/gift-cards">Gift cards</a>
+    <a href="/about">About</a>
   </nav>
   <div class="menu__foot">
     <a class="btn btn--primary" data-booking>Book a Tee Time</a>
     <div class="menu__meta">
-      <a data-login>Member Login</a>
+      <a data-login>Member login</a>
       <a href="tel:+19855550142">(985) 555-0142</a>
     </div>
   </div>
@@ -71,203 +71,146 @@
 
 <main id="main">
 
-  <section class="hero hero--page" id="top" aria-labelledby="hero-title" data-dark>
-    <div class="hero__media">
-      <div class="ph ph--dark ph--bleed ph--hero" role="img" aria-label="Photo placeholder: a golfer checking shot data on the bay screen">
-        <div class="ph__fill"></div>
-        <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.75" y="4" width="12.5" height="9" rx="2"/><circle cx="8" cy="8.5" r="2.4"/><path d="M5.6 4l1-1.7h2.8l1 1.7"/></svg><span>Hero photo · Golfer checking shot data on the bay screen · 2880 × 1800</span></span>
+  <section class="hero hero--type" id="top" aria-labelledby="hero-title" data-dark>
+    <div class="wrap hero__grid">
+      <div>
+        <h1 class="h1 hero__title" id="hero-title"><span class="ln"><span>Memberships</span></span></h1>
+        <p class="hero__lead" data-hero-in>Walk-in bays are $40 an hour. Members pay as little as $15.</p>
+        <div class="hero__ctas" data-hero-in><a class="btn btn--primary" href="#plans">Compare Plans</a></div>
       </div>
-      <div class="hero__shade"></div>
+      <p class="hero__figure" data-hero-in><span class="fig">$15</span><small>an hour on the Eagle plan</small></p>
     </div>
-    <div class="hero__content">
-      <div class="wrap">
-        <p class="hero__kicker" data-hero-el>Memberships <strong>Thibodaux T-Box</strong></p>
-        <h1 class="hero__title" id="hero-title" data-split><span class="ln">Every hour</span> <em class="ln">costs less.</em></h1>
-        <p class="hero__lead" data-hero-el>Memberships come with bay hours every month, a lower rate on every hour you play and tee times held just for members.</p>
-        <div class="hero__ctas" data-hero-el>
-          <a class="btn btn--primary" href="#plans">See the Plans</a>
-          <a class="btn btn--light" data-booking>Book a Tee Time</a>
-        </div>
+  </section>
+
+  <section class="plans" id="plans" aria-labelledby="plans-title">
+    <div class="wrap">
+      <div class="plans__head">
+        <h2 class="h2 h2--sm" id="plans-title">Compare plans</h2>
       </div>
+      <div class="compare">
+        <div class="compare__labels" aria-hidden="true"><span></span><span>Monthly price</span><span>Bay hours each month</span><span>Book ahead</span><span>Play each day</span><span>Extra hours</span><span>Members-only hours</span><span>Savings vs walk-in</span><span></span></div>
+        <article class="plan plan--walkin" id="walk-in" aria-labelledby="walk-in-name">
+          <header class="plan__head">
+            <h3 class="plan__name" id="walk-in-name">Walk-in</h3>
+            <p class="plan__rate"><span class="fig">$40</span><small>an hour</small></p>
+          </header>
+          <p class="plan__row"><span class="plan__label">Monthly price</span> <span class="plan__value">None</span></p>
+          <p class="plan__row"><span class="plan__label">Bay hours each month</span> <span class="plan__value">Pay by the hour</span></p>
+          <p class="plan__row"><span class="plan__label">Book ahead</span> <span class="plan__value">Set at launch</span></p>
+          <p class="plan__row"><span class="plan__label">Play each day</span> <span class="plan__value">Set at launch</span></p>
+          <p class="plan__row"><span class="plan__label">Extra hours</span> <span class="plan__value">$40, or $50 Friday to Sunday</span></p>
+          <p class="plan__row"><span class="plan__label">Members-only hours</span> <span class="plan__value">Not included</span></p>
+          <p class="plan__row"><span class="plan__label">Savings vs walk-in</span> <span class="plan__value">None</span></p>
+          <div class="plan__cta"><a class="btn btn--quiet" data-booking>Book a Tee Time</a></div>
+        </article>
+        <article class="plan" id="par" aria-labelledby="par-name">
+          <header class="plan__head">
+            <h3 class="plan__name" id="par-name">Par</h3>
+            <p class="plan__rate"><span class="fig">$25</span><small>an hour</small></p>
+          </header>
+          <p class="plan__row"><span class="plan__label">Monthly price</span> <span class="plan__value">$100</span></p>
+          <p class="plan__row"><span class="plan__label">Bay hours each month</span> <span class="plan__value">4</span></p>
+          <p class="plan__row"><span class="plan__label">Book ahead</span> <span class="plan__value">3 days</span></p>
+          <p class="plan__row"><span class="plan__label">Play each day</span> <span class="plan__value">Up to 2 hours</span></p>
+          <p class="plan__row"><span class="plan__label">Extra hours</span> <span class="plan__value">$20</span></p>
+          <p class="plan__row"><span class="plan__label">Members-only hours</span> <span class="plan__value">Included</span></p>
+          <p class="plan__row"><span class="plan__label">Savings vs walk-in</span> <span class="plan__value">$60 a month</span></p>
+          <div class="plan__cta"><a class="btn btn--primary" data-join="par">Join Now</a></div>
+        </article>
+        <article class="plan" id="birdie" aria-labelledby="birdie-name">
+          <header class="plan__head">
+            <h3 class="plan__name" id="birdie-name">Birdie</h3>
+            <p class="plan__rate"><span class="fig">$21</span><small>an hour</small></p>
+          </header>
+          <p class="plan__row"><span class="plan__label">Monthly price</span> <span class="plan__value">$125</span></p>
+          <p class="plan__row"><span class="plan__label">Bay hours each month</span> <span class="plan__value">6</span></p>
+          <p class="plan__row"><span class="plan__label">Book ahead</span> <span class="plan__value">7 days</span></p>
+          <p class="plan__row"><span class="plan__label">Play each day</span> <span class="plan__value">Up to 2 hours</span></p>
+          <p class="plan__row"><span class="plan__label">Extra hours</span> <span class="plan__value">$20</span></p>
+          <p class="plan__row"><span class="plan__label">Members-only hours</span> <span class="plan__value">Included</span></p>
+          <p class="plan__row"><span class="plan__label">Savings vs walk-in</span> <span class="plan__value">$115 a month</span></p>
+          <div class="plan__cta"><a class="btn btn--primary" data-join="birdie">Join Now</a></div>
+        </article>
+        <article class="plan plan--feature" id="eagle" aria-labelledby="eagle-name">
+          <header class="plan__head">
+            <h3 class="plan__name" id="eagle-name">Eagle</h3>
+            <p class="plan__rate"><span class="fig">$15</span><small>an hour</small></p><p class="plan__note">Lowest hourly rate</p>
+          </header>
+          <p class="plan__row"><span class="plan__label">Monthly price</span> <span class="plan__value">$150</span></p>
+          <p class="plan__row"><span class="plan__label">Bay hours each month</span> <span class="plan__value">10</span></p>
+          <p class="plan__row"><span class="plan__label">Book ahead</span> <span class="plan__value">10 days</span></p>
+          <p class="plan__row"><span class="plan__label">Play each day</span> <span class="plan__value">Up to 2 hours</span></p>
+          <p class="plan__row"><span class="plan__label">Extra hours</span> <span class="plan__value">$20</span></p>
+          <p class="plan__row"><span class="plan__label">Members-only hours</span> <span class="plan__value">Included</span></p>
+          <p class="plan__row"><span class="plan__label">Savings vs walk-in</span> <span class="plan__value">$250 a month</span></p>
+          <div class="plan__cta"><a class="btn btn--primary" data-join="eagle">Join Now</a></div>
+        </article>
+      </div>
+      <p class="fine plans__fine">Hourly rate is the monthly price divided by included bay hours, rounded to the nearest dollar. Savings compare included hours with the $40 weekday walk-in rate. Final pricing is set before opening.</p>
     </div>
   </section>
 
-  <section class="tiers" id="plans" aria-labelledby="plans-title">
+  <section class="day" id="hours" aria-labelledby="day-title" data-dark>
     <div class="wrap">
-      <header class="head head--center">
-        <p class="kicker" data-reveal>Plans</p>
-        <h2 class="h2" id="plans-title" data-split>Four ways <em>to play.</em></h2>
-        <p class="lead" data-reveal>Walk in any time, or join and pay less for every hour. Each plan leads with its effective hourly rate.</p>
-      </header>
-      <ul class="tier-grid">
-        <li data-reveal>
-          <article class="tier tier--walkin" id="walk-in">
-            
-            <h3 class="tier__head">
-              <span class="tier__name">Walk-in</span>
-              <span class="tier__rate">$40<span class="tier__per">/HR</span></span>
-            </h3>
-            <p class="tier__math">Monday to Thursday · $50 Friday to Sunday</p>
-            
-            <ul class="tier__list"><li>No membership needed</li><li>Book any open tee time</li><li>Pay by the hour</li></ul>
-            <a class="btn btn--soft" data-booking>Book a Tee Time</a>
-          </article>
-        </li>
-        <li data-reveal>
-          <article class="tier" id="par" style="--tee: var(--tee-1)">
-            
-            <h3 class="tier__head">
-              <span class="tier__name"><span class="tee" aria-hidden="true"></span>Par</span>
-              <span class="tier__rate">$25<span class="tier__per">/HR</span></span>
-            </h3>
-            <p class="tier__math">$100 a month · 4 bay hours</p>
-            <p class="tier__save">Saves $60 a month</p>
-            <ul class="tier__list"><li>Book 3 days ahead</li><li>Up to 2 hours a day</li><li>Extra hours $20</li><li>Members-only hours</li></ul>
-            <a class="btn btn--primary" data-join="par">Join Now</a>
-          </article>
-        </li>
-        <li data-reveal>
-          <article class="tier" id="birdie" style="--tee: var(--tee-2)">
-            
-            <h3 class="tier__head">
-              <span class="tier__name"><span class="tee" aria-hidden="true"></span>Birdie</span>
-              <span class="tier__rate">$21<span class="tier__per">/HR</span></span>
-            </h3>
-            <p class="tier__math">$125 a month · 6 bay hours</p>
-            <p class="tier__save">Saves $115 a month</p>
-            <ul class="tier__list"><li>Book 7 days ahead</li><li>Up to 2 hours a day</li><li>Extra hours $20</li><li>Members-only hours</li></ul>
-            <a class="btn btn--primary" data-join="birdie">Join Now</a>
-          </article>
-        </li>
-        <li data-reveal>
-          <article class="tier tier--feature" id="eagle" style="--tee: var(--leaf)">
-            <span class="tier__badge">Best rate</span>
-            <h3 class="tier__head">
-              <span class="tier__name"><span class="tee" aria-hidden="true"></span>Eagle</span>
-              <span class="tier__rate">$15<span class="tier__per">/HR</span></span>
-            </h3>
-            <p class="tier__math">$150 a month · 10 bay hours</p>
-            <p class="tier__save">Saves $250 a month</p>
-            <ul class="tier__list"><li>Book 10 days ahead</li><li>Up to 2 hours a day</li><li>Extra hours $20</li><li>Members-only hours</li></ul>
-            <a class="btn btn--primary" data-join="eagle">Join Now</a>
-          </article>
-        </li>
-      </ul>
-      <p class="fine tiers__fine" data-reveal>Effective rate is the monthly price divided by included bay hours, rounded to the nearest dollar. Savings compare included hours with the $40 weekday walk-in rate. Final pricing is set before opening.</p>
-    </div>
-  </section>
-
-  <section class="perks-sec" aria-labelledby="perks-title">
-    <div class="wrap">
-      <header class="head head--split">
-        <div>
-          <p class="kicker" data-reveal>Included</p>
-          <h2 class="h2" id="perks-title" data-split>The same perks, <em>every plan.</em></h2>
-        </div>
-        <p class="lead" data-reveal>Every membership works the same way. The difference is how many hours you get and how far ahead you can book.</p>
-      </header>
-      <ul class="perks">
-        <li class="perk" data-reveal><span class="icon-dot"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle class="d" pathLength="1" cx="24" cy="24" r="17.5"/><path class="d" pathLength="1" d="M24 14v10l6.5 4"/></svg></span><h3 class="display perk__title">Members-only hours</h3><p>Early mornings and late evenings are held for members.</p></li>
-        <li class="perk" data-reveal><span class="icon-dot"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect class="d" pathLength="1" x="6.5" y="10" width="35" height="31.5" rx="7"/><path class="d" pathLength="1" d="M6.5 19h35"/><path class="d" pathLength="1" d="M15.5 6.5v7M32.5 6.5v7"/><path class="d" pathLength="1" d="M16 30.5h15M26 25.5l5 5-5 5"/></svg></span><h3 class="display perk__title">Book ahead</h3><p>Reserve your bay 3 to 10 days out, depending on your plan.</p></li>
-        <li class="perk" data-reveal><span class="icon-dot"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle class="d" pathLength="1" cx="24" cy="24" r="17.5"/><path class="d" pathLength="1" d="M24 16.5v15M16.5 24h15"/></svg></span><h3 class="display perk__title">Extra hours at $20</h3><p>Used up your hours? Keep playing for $20 an hour.</p></li>
-        <li class="perk" data-reveal><span class="icon-dot"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle class="d" pathLength="1" cx="24" cy="16.5" r="7.5"/><path class="d" pathLength="1" d="M9.5 40c1.8-7.4 7.6-11.5 14.5-11.5S36.7 32.6 38.5 40"/></svg></span><h3 class="display perk__title">Member login</h3><p>See your hours, bookings and member pricing in one place.</p></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="band day" id="hours" aria-labelledby="day-title" data-dark>
-    <div class="band__bg" aria-hidden="true"></div>
-    <div class="wrap">
-      <header class="head head--center">
-        <p class="kicker" data-reveal>Members-only hours</p>
-        <h2 class="h2" id="day-title" data-split>The best hours <em>are yours.</em></h2>
-        <p class="lead" data-reveal>Before work and after dinner, the bays are held for members. Everyone is welcome in between.</p>
-      </header>
+      <div class="day__head">
+        <h2 class="h2" id="day-title">Mornings and late nights are for members.</h2>
+        <p class="lead">Before work and after dinner, the bays are held for members. Everyone’s welcome in between.</p>
+      </div>
       <figure class="day__chart" data-day>
         <div class="day__bar" role="img" aria-label="Planned daily hours: members only from 5 to 9 AM, open to everyone from 9 AM to 8 PM, members only from 8 to 11 PM.">
           <span class="day__seg is-members" style="--a:0;--b:4"><span>Members only</span></span>
           <span class="day__seg is-open" style="--a:4;--b:15"><span>Open to everyone</span></span>
           <span class="day__seg is-members" style="--a:15;--b:18"><span>Members only</span></span>
         </div>
-        <div class="day__ticks" aria-hidden="true">
-          <span style="--at:0">5 AM</span><span style="--at:4">9 AM</span><span style="--at:15">8 PM</span><span style="--at:18">11 PM</span>
-        </div>
+        <div class="day__ticks" aria-hidden="true"><span style="--at:0">5 AM</span><span style="--at:4">9 AM</span><span style="--at:15">8 PM</span><span style="--at:18">11 PM</span></div>
         <div class="day__legend" aria-hidden="true"><span><i></i>Members only</span><span><i class="is-open"></i>Open to everyone</span></div>
         <figcaption class="fine">Planned hours. Final hours are set at launch.</figcaption>
       </figure>
     </div>
   </section>
 
-  <section class="founding" id="founding" aria-labelledby="founding-title">
-    <div class="wrap founding__grid">
-      <p class="count">
-        <span class="sr-only"><span data-days></span> <span data-days-unit>days</span> left to join as a founding member.</span>
-        <span class="odo" data-odo aria-hidden="true"></span>
-        <span class="count__label" aria-hidden="true" data-reveal><span data-days-unit>days</span> left</span>
-      </p>
+  <section class="founding-band" id="founding" aria-labelledby="founding-title">
+    <div class="wrap founding-band__grid">
       <div>
-        <p class="kicker" data-reveal>Founding membership</p>
-        <h2 class="h2" id="founding-title" data-split>Be here <em>from day one.</em></h2>
-        <p class="lead founding__copy" data-reveal>Founding memberships are only offered before we open. Join by opening day, <span data-deadline>November 30</span>, and you are part of T-Box from the very first swing.</p>
-        <a class="btn btn--primary" data-join="founding" data-reveal>Become a Founding Member</a>
+        <h2 class="h2" id="founding-title"><span class="fig" data-days>67</span> <span data-days-unit>days</span> left to join as a founding member.</h2>
+        <p class="fine">Only sold until opening day, <span data-deadline>November 30</span>.</p>
       </div>
+      <a class="btn btn--primary" data-join="founding">Become a Founding Member</a>
     </div>
   </section>
 
   <section class="faq" id="faq" aria-labelledby="faq-title">
     <div class="wrap faq__grid">
-      <header class="faq__head">
-        <p class="kicker" data-reveal>Questions</p>
-        <h2 class="h2" id="faq-title" data-split>Good <em>questions.</em></h2>
-        <p class="lead" data-reveal>Still wondering about something? <a href="/about#contact">Send us a message.</a></p>
-      </header>
+      <div class="faq__head">
+        <h2 class="h2" id="faq-title">Before you join</h2>
+        <p class="lead">Don’t see your question? <a class="tlink" href="/about#contact">Send us a message.</a></p>
+      </div>
       <div class="faq__list">
-        <details class="qa" data-reveal>
-          <summary>Do I need a membership to play?<span class="qa__icon" aria-hidden="true"></span></summary>
-          <div class="qa__a"><p>No. Anyone can book a bay at the walk-in rate: $40 an hour Monday to Thursday and $50 Friday to Sunday.</p></div>
-        </details>
-        <details class="qa" data-reveal>
-          <summary>What happens when I use all my hours?<span class="qa__icon" aria-hidden="true"></span></summary>
-          <div class="qa__a"><p>Keep playing. Members pay $20 for each extra hour.</p></div>
-        </details>
-        <details class="qa" data-reveal>
-          <summary>How far ahead can I book?<span class="qa__icon" aria-hidden="true"></span></summary>
-          <div class="qa__a"><p>Par members can book 3 days ahead, Birdie members 7 days and Eagle members 10 days.</p></div>
-        </details>
-        <details class="qa" data-reveal>
-          <summary>How long can I play each day?<span class="qa__icon" aria-hidden="true"></span></summary>
-          <div class="qa__a"><p>Members can book up to 2 hours a day.</p></div>
-        </details>
-        <details class="qa" data-reveal>
-          <summary>When are members-only hours?<span class="qa__icon" aria-hidden="true"></span></summary>
-          <div class="qa__a"><p>We plan to hold 5 to 9 AM and 8 to 11 PM for members. Final hours are set at launch.</p></div>
-        </details>
-        <details class="qa" data-reveal>
-          <summary>How do I get into the building?<span class="qa__icon" aria-hidden="true"></span></summary>
-          <div class="qa__a"><p>Every booking comes with a door code. Tap it in at the keypad and walk right in.</p></div>
-        </details>
-        <details class="qa" data-reveal>
-          <summary>What is a founding membership?<span class="qa__icon" aria-hidden="true"></span></summary>
-          <div class="qa__a"><p>Founding memberships are sold before we open, so you are part of T-Box from the very first swing.</p></div>
-        </details>
+        <details class="qa"><summary>Do I need a membership to play?<span class="qa__icon" aria-hidden="true"></span></summary><div class="qa__a"><p>No. Anyone can book a bay at the walk-in rate: $40 an hour Monday to Thursday and $50 Friday to Sunday.</p></div></details>
+        <details class="qa"><summary>What happens when I use up my hours?<span class="qa__icon" aria-hidden="true"></span></summary><div class="qa__a"><p>Keep playing. Extra hours are $20 each for members.</p></div></details>
+        <details class="qa"><summary>How far ahead can I book?<span class="qa__icon" aria-hidden="true"></span></summary><div class="qa__a"><p>Par members can book 3 days ahead, Birdie members 7 days and Eagle members 10 days.</p></div></details>
+        <details class="qa"><summary>How long can I play each day?<span class="qa__icon" aria-hidden="true"></span></summary><div class="qa__a"><p>Members can book up to 2 hours a day.</p></div></details>
+        <details class="qa"><summary>When are members-only hours?<span class="qa__icon" aria-hidden="true"></span></summary><div class="qa__a"><p>We’re planning on 5 to 9 AM and 8 to 11 PM. Final hours are set at launch.</p></div></details>
+        <details class="qa"><summary>How do I get in?<span class="qa__icon" aria-hidden="true"></span></summary><div class="qa__a"><p>Your booking comes with a door code. Tap it in at the keypad by the door.</p></div></details>
+        <details class="qa"><summary>What’s a founding membership?<span class="qa__icon" aria-hidden="true"></span></summary><div class="qa__a"><p>A membership you buy before we open. They’re only sold until opening day.</p></div></details>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer class="foot" data-dark>
+<footer class="foot" id="visit" data-dark>
   <div class="wrap">
     <div class="foot__top">
-      <h2 class="h2" data-split>See you on the <em>tee.</em></h2>
-      <a class="btn btn--primary" data-booking data-reveal>Book a Tee Time</a>
+      <h2 class="h2">See you on the tee.</h2>
+      <a class="btn btn--primary" data-booking>Book a Tee Time</a>
     </div>
     <div class="foot__grid">
-      <div class="foot__brand" data-reveal>
+      <div class="foot__brand">
         <a href="/" aria-label="Thibodaux T-Box home"><img src="/assets/tbox-logo-reverse-footer.png" width="281" height="240" alt="Thibodaux TBOX Golf Simulators" loading="lazy"></a>
       </div>
-      <div data-reveal>
-        <h3 class="kicker">Explore</h3>
+      <div>
+        <h3 class="foot__label">Explore</h3>
         <ul class="foot__links">
           <li><a href="/">Home</a></li>
           <li><a href="/memberships" aria-current="page">Memberships</a></li>
@@ -276,23 +219,23 @@
           <li><a href="/about">About</a></li>
         </ul>
       </div>
-      <div data-reveal>
-        <h3 class="kicker">Hours</h3>
+      <div>
+        <h3 class="foot__label">Hours</h3>
         <dl class="hours">
-          <div><dt>Members only</dt><dd>5 AM to 9 AM</dd></div>
-          <div><dt>Open to everyone</dt><dd>9 AM to 8 PM</dd></div>
-          <div><dt>Members only</dt><dd>8 PM to 11 PM</dd></div>
-        </dl>
+            <div><dt>Members only</dt><dd>5 AM to 9 AM</dd></div>
+            <div><dt>Open to everyone</dt><dd>9 AM to 8 PM</dd></div>
+            <div><dt>Members only</dt><dd>8 PM to 11 PM</dd></div>
+          </dl>
         <p class="fine">Opening soon. Final hours are set at launch.</p>
       </div>
-      <div data-reveal>
+      <div>
         <div class="foot__group">
-          <h3 class="kicker">Visit</h3>
+          <h3 class="foot__label">Visit</h3>
           <p>Street address coming soon<br>Thibodaux, LA 70301</p>
-          <a class="link" href="https://maps.google.com/?q=Thibodaux,+LA">Get directions <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5 8 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="tlink" href="https://maps.google.com/?q=Thibodaux,+LA">Get directions</a>
         </div>
         <div class="foot__group">
-          <h3 class="kicker">Call</h3>
+          <h3 class="foot__label">Call</h3>
           <a class="foot__phone" href="tel:+19855550142">(985) 555-0142</a>
         </div>
       </div>
@@ -300,7 +243,7 @@
     <div class="foot__base">
       <p>&copy; <span data-year>2026</span> Thibodaux T-Box</p>
       <nav aria-label="Footer">
-        <a data-login>Member Login</a>
+        <a data-login>Member login</a>
         <a data-social="instagram" hidden>Instagram</a>
         <a data-social="facebook" hidden>Facebook</a>
       </nav>

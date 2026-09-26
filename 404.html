@@ -11,12 +11,12 @@
 <link rel="apple-touch-icon" href="/assets/tbox-apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400..500&family=Mona+Sans:wdth,wght@75..100,400..900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..100,400..800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
 <!-- Google Tag Manager: paste the container snippet (GTM-XXXXXXX) here. Load GA4 and the Meta Pixel through GTM. -->
 <script>window.dataLayer = window.dataLayer || [];</script>
 <script>
-  // Animated elements start hidden. If the motion scripts never arrive, show everything after 3.5s.
+  // The hero waits for the motion script. If it never arrives, show everything after 3.5s.
   document.documentElement.classList.add('js');
   setTimeout(function () {
     if (!document.documentElement.classList.contains('is-ready')) document.documentElement.classList.remove('js');
@@ -45,7 +45,7 @@
       <a href="/about">About</a>
     </nav>
     <div class="nav__actions">
-      <a class="nav__login" data-login>Member Login</a>
+      <a class="nav__login" data-login>Member login</a>
       <a class="btn btn--nav" data-booking>Book Now</a>
       <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
     </div>
@@ -54,16 +54,16 @@
 
 <div class="menu" id="menu" inert>
   <nav class="menu__links" aria-label="Menu">
-    <a href="/" style="--i:0">Home</a>
-    <a href="/memberships" style="--i:1">Memberships</a>
-    <a href="/events" style="--i:2">Events</a>
-    <a href="/gift-cards" style="--i:3">Gift cards</a>
-    <a href="/about" style="--i:4">About</a>
+    <a href="/">Home</a>
+    <a href="/memberships">Memberships</a>
+    <a href="/events">Events</a>
+    <a href="/gift-cards">Gift cards</a>
+    <a href="/about">About</a>
   </nav>
   <div class="menu__foot">
     <a class="btn btn--primary" data-booking>Book a Tee Time</a>
     <div class="menu__meta">
-      <a data-login>Member Login</a>
+      <a data-login>Member login</a>
       <a href="tel:+19855550142">(985) 555-0142</a>
     </div>
   </div>
@@ -71,21 +71,17 @@
 
 <main id="main">
 
-  <section class="hero hero--404" id="top" aria-labelledby="hero-title" data-dark>
+  <section class="hero hero--photo" id="top" aria-labelledby="hero-title" data-dark>
     <div class="hero__media">
-      <div class="ph ph--dark ph--bleed ph--hero" aria-hidden="true">
-        <div class="ph__fill"></div>
-      </div>
-      <div class="hero__shade"></div>
+      <div class="ph ph--dark" aria-hidden="true"><div class="ph__fill"></div><span class="ph__tag"></span></div>
+      <div class="hero__scrim"></div>
     </div>
-    <div class="hero__content">
+    <div class="hero__body">
       <div class="wrap">
-        <p class="hero__kicker" data-hero-el>Page not found <strong>Thibodaux T-Box</strong></p>
-        <h1 class="hero__title" id="hero-title" data-split><span class="ln">Out of</span> <em class="ln">bounds.</em></h1>
-        <p class="hero__lead" data-hero-el>This page landed in the rough. Take a drop and head back to the fairway.</p>
-        <div class="hero__ctas" data-hero-el>
-          <a class="btn btn--primary" href="/">Back to Home</a>
-          <a class="btn btn--light" data-booking>Book a Tee Time</a>
+        <h1 class="h1 hero__title" id="hero-title"><span class="ln"><span>Out of</span></span><span class="ln"><span>bounds.</span></span></h1>
+        <div class="hero__row">
+          <p class="hero__lead" data-hero-in>That page doesn’t exist. Re-tee from the home page.</p>
+          <div class="hero__ctas" data-hero-in><a class="btn btn--primary" href="/">Back to Home</a></div>
         </div>
       </div>
     </div>
@@ -93,18 +89,18 @@
 
 </main>
 
-<footer class="foot" data-dark>
+<footer class="foot" id="visit" data-dark>
   <div class="wrap">
     <div class="foot__top">
-      <h2 class="h2" data-split>See you on the <em>tee.</em></h2>
-      <a class="btn btn--primary" data-booking data-reveal>Book a Tee Time</a>
+      <h2 class="h2">See you on the tee.</h2>
+      <a class="btn btn--primary" data-booking>Book a Tee Time</a>
     </div>
     <div class="foot__grid">
-      <div class="foot__brand" data-reveal>
+      <div class="foot__brand">
         <a href="/" aria-label="Thibodaux T-Box home"><img src="/assets/tbox-logo-reverse-footer.png" width="281" height="240" alt="Thibodaux TBOX Golf Simulators" loading="lazy"></a>
       </div>
-      <div data-reveal>
-        <h3 class="kicker">Explore</h3>
+      <div>
+        <h3 class="foot__label">Explore</h3>
         <ul class="foot__links">
           <li><a href="/">Home</a></li>
           <li><a href="/memberships">Memberships</a></li>
@@ -113,23 +109,23 @@
           <li><a href="/about">About</a></li>
         </ul>
       </div>
-      <div data-reveal>
-        <h3 class="kicker">Hours</h3>
+      <div>
+        <h3 class="foot__label">Hours</h3>
         <dl class="hours">
-          <div><dt>Members only</dt><dd>5 AM to 9 AM</dd></div>
-          <div><dt>Open to everyone</dt><dd>9 AM to 8 PM</dd></div>
-          <div><dt>Members only</dt><dd>8 PM to 11 PM</dd></div>
-        </dl>
+            <div><dt>Members only</dt><dd>5 AM to 9 AM</dd></div>
+            <div><dt>Open to everyone</dt><dd>9 AM to 8 PM</dd></div>
+            <div><dt>Members only</dt><dd>8 PM to 11 PM</dd></div>
+          </dl>
         <p class="fine">Opening soon. Final hours are set at launch.</p>
       </div>
-      <div data-reveal>
+      <div>
         <div class="foot__group">
-          <h3 class="kicker">Visit</h3>
+          <h3 class="foot__label">Visit</h3>
           <p>Street address coming soon<br>Thibodaux, LA 70301</p>
-          <a class="link" href="https://maps.google.com/?q=Thibodaux,+LA">Get directions <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5 8 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="tlink" href="https://maps.google.com/?q=Thibodaux,+LA">Get directions</a>
         </div>
         <div class="foot__group">
-          <h3 class="kicker">Call</h3>
+          <h3 class="foot__label">Call</h3>
           <a class="foot__phone" href="tel:+19855550142">(985) 555-0142</a>
         </div>
       </div>
@@ -137,7 +133,7 @@
     <div class="foot__base">
       <p>&copy; <span data-year>2026</span> Thibodaux T-Box</p>
       <nav aria-label="Footer">
-        <a data-login>Member Login</a>
+        <a data-login>Member login</a>
         <a data-social="instagram" hidden>Instagram</a>
         <a data-social="facebook" hidden>Facebook</a>
       </nav>

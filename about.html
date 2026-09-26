@@ -11,12 +11,12 @@
 <link rel="apple-touch-icon" href="/assets/tbox-apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400..500&family=Mona+Sans:wdth,wght@75..100,400..900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..100,400..800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
 <!-- Google Tag Manager: paste the container snippet (GTM-XXXXXXX) here. Load GA4 and the Meta Pixel through GTM. -->
 <script>window.dataLayer = window.dataLayer || [];</script>
 <script>
-  // Animated elements start hidden. If the motion scripts never arrive, show everything after 3.5s.
+  // The hero waits for the motion script. If it never arrives, show everything after 3.5s.
   document.documentElement.classList.add('js');
   setTimeout(function () {
     if (!document.documentElement.classList.contains('is-ready')) document.documentElement.classList.remove('js');
@@ -62,7 +62,7 @@
       <a href="/about" aria-current="page">About</a>
     </nav>
     <div class="nav__actions">
-      <a class="nav__login" data-login>Member Login</a>
+      <a class="nav__login" data-login>Member login</a>
       <a class="btn btn--nav" data-booking>Book Now</a>
       <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
     </div>
@@ -71,16 +71,16 @@
 
 <div class="menu" id="menu" inert>
   <nav class="menu__links" aria-label="Menu">
-    <a href="/" style="--i:0">Home</a>
-    <a href="/memberships" style="--i:1">Memberships</a>
-    <a href="/events" style="--i:2">Events</a>
-    <a href="/gift-cards" style="--i:3">Gift cards</a>
-    <a href="/about" style="--i:4" aria-current="page">About</a>
+    <a href="/">Home</a>
+    <a href="/memberships">Memberships</a>
+    <a href="/events">Events</a>
+    <a href="/gift-cards">Gift cards</a>
+    <a href="/about" aria-current="page">About</a>
   </nav>
   <div class="menu__foot">
     <a class="btn btn--primary" data-booking>Book a Tee Time</a>
     <div class="menu__meta">
-      <a data-login>Member Login</a>
+      <a data-login>Member login</a>
       <a href="tel:+19855550142">(985) 555-0142</a>
     </div>
   </div>
@@ -88,104 +88,67 @@
 
 <main id="main">
 
-  <section class="hero hero--page" id="top" aria-labelledby="hero-title" data-dark>
+  <section class="hero hero--photo is-short" id="top" aria-labelledby="hero-title" data-dark>
     <div class="hero__media">
-      <div class="ph ph--dark ph--bleed ph--hero" role="img" aria-label="Photo placeholder: the T-Box facility or a 3D rendering of the bays">
-        <div class="ph__fill"></div>
-        <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.75" y="4" width="12.5" height="9" rx="2"/><circle cx="8" cy="8.5" r="2.4"/><path d="M5.6 4l1-1.7h2.8l1 1.7"/></svg><span>Facility photo or 3D rendering · 2880 × 1800</span></span>
-      </div>
-      <div class="hero__shade"></div>
+      <div class="ph ph--dark" role="img" aria-label="Photo placeholder: the T-Box facility or a 3D rendering of the bays"><div class="ph__fill"></div><span class="ph__tag">Hero photo or 3D rendering of the facility (2880 × 1800)</span></div>
+      <div class="hero__scrim"></div>
     </div>
-    <div class="hero__content">
+    <div class="hero__body">
       <div class="wrap">
-        <p class="hero__kicker" data-hero-el>About <strong>Thibodaux, Louisiana</strong></p>
-        <h1 class="hero__title" id="hero-title" data-split><span class="ln">Built for</span> <em class="ln">Thibodaux.</em></h1>
-        <p class="hero__lead" data-hero-el>Three indoor golf simulator bays for a town that loves the game and deserves a place to play it all year.</p>
-        <div class="hero__ctas" data-hero-el>
-          <a class="btn btn--primary" data-booking>Book a Tee Time</a>
-          <a class="btn btn--light" href="#contact">Get in Touch</a>
+        <h1 class="h1 hero__title" id="hero-title"><span class="ln"><span>Somewhere</span></span><span class="ln"><span>to practice,</span></span><span class="ln"><span>all year.</span></span></h1>
+        <div class="hero__row">
+          <p class="hero__lead" data-hero-in>Three indoor golf simulator bays in Thibodaux, opening soon.</p>
+          <div class="hero__ctas" data-hero-in><a class="btn btn--primary" href="#contact">Send a Message</a></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="stats-sec" aria-labelledby="why-title">
-    <div class="wrap">
-      <header class="head head--split">
-        <div>
-          <p class="kicker" data-reveal>Why T-Box</p>
-          <h2 class="h2" id="why-title" data-split>Golf weather, <em>every day.</em></h2>
-        </div>
-        <p class="lead" data-reveal>South Louisiana is a great place to love golf and a tough place to practice it. So we brought the course indoors.</p>
-      </header>
-      <ul class="stats">
-        <li data-reveal><span class="stat__num"><span data-count="60">60</span></span><span class="stat__label">Inches of rain a year, give or take</span></li>
-        <li data-reveal><span class="stat__num"><span data-count="90">90</span><small>&deg;F</small></span><span class="stat__label">And up, for months every summer</span></li>
-        <li data-reveal><span class="stat__num"><span data-count="0" data-from="9">0</span></span><span class="stat__label">Driving ranges in town</span></li>
-        <li data-reveal><span class="stat__num"><span data-count="3">3</span></span><span class="stat__label">Indoor bays, rain or shine</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="story" aria-labelledby="story-title">
-    <div class="wrap">
-      <div class="story__grid">
-        <h2 class="h2" id="story-title" data-split>A place to practice, <em>all year.</em></h2>
-        <div class="story__copy">
-          <p class="lead" data-reveal>Thibodaux has a strong junior golf program at Bayou Country Club and plenty of golfers who love the game. What it has not had is a driving range, or anywhere to play when the rain rolls in or the heat sets in.</p>
-          <p data-reveal>T-Box changes that. Three simulator bays, open to everyone, with memberships for the regulars and room for parties and team events.</p>
-          <p data-reveal>It is fully automated, so there is no front desk and no waiting. Book online, get your door code and let yourself in.</p>
-        </div>
+  <section class="why" aria-labelledby="why-title">
+    <div class="wrap why__grid">
+      <div class="why__copy">
+        <h2 class="h2" id="why-title">Why we built it</h2>
+        <p class="lead">Thibodaux has a strong junior program at Bayou Country Club, but there’s no driving range in town. Between the rain and the summer heat, a lot of practice days get lost.</p>
+        <p>So we built three simulator bays. Anyone can book one, and regulars can save with a membership.</p>
+        <p>There’s no front desk. Book online, get your door code and let yourself in.</p>
       </div>
-      <div class="ph ph--wide" role="img" aria-label="Photo placeholder: the three T-Box bays" data-parallax data-reveal>
-  <div class="ph__fill"></div>
-  <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.75" y="4" width="12.5" height="9" rx="2"/><circle cx="8" cy="8.5" r="2.4"/><path d="M5.6 4l1-1.7h2.8l1 1.7"/></svg><span>Facility photo · The three bays, wide · 2560 × 1100</span></span>
-</div>
+      <ul class="bigfacts">
+        <li class="bigfact"><span class="fig">60</span><span>Inches of rain a year, give or take</span></li>
+        <li class="bigfact"><span class="fig">90<small>&deg;F</small></span><span>And up, for months every summer</span></li>
+        <li class="bigfact"><span class="fig">0</span><span>Driving ranges in town</span></li>
+      </ul>
     </div>
   </section>
 
-  <section class="band tech" id="tech" aria-labelledby="tech-title" data-dark>
-    <div class="band__bg" aria-hidden="true"></div>
+  <section class="tech" id="tech" aria-labelledby="tech-title" data-dark>
     <div class="wrap">
-      <header class="head head--split">
-        <div>
-          <p class="kicker" data-reveal>The tech</p>
-          <h2 class="h2" id="tech-title" data-split>See every <em>swing.</em></h2>
-        </div>
-        <p class="lead" data-reveal>Each bay pairs launch monitor cameras with a big screen, so every shot shows up the moment you hit it.</p>
-      </header>
-      <ul class="tech-grid">
-        <li data-reveal><div class="tcard"><span class="icon-dot"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect class="d" pathLength="1" x="5.5" y="13" width="37" height="26" rx="6"/><circle class="d" pathLength="1" cx="24" cy="26" r="7.5"/><path class="d" pathLength="1" d="M16.5 13l3-5.5h9l3 5.5"/></svg></span><h3 class="display">Camera tracking</h3><p>Cameras read ball speed, launch, spin and carry on every swing.</p></div></li>
-        <li data-reveal><div class="tcard"><span class="icon-dot"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="d" pathLength="1" d="M16 40V7"/><path class="d" pathLength="1" d="M16 8.5l17 6.5-17 6.5"/><path class="d" pathLength="1" d="M8 40.5c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3z"/></svg></span><h3 class="display">Courses and range</h3><p>Play a full round, or work on your game at the range with instant numbers.</p></div></li>
-        <li data-reveal><div class="tcard"><span class="icon-dot"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect class="d" pathLength="1" x="11" y="4.5" width="26" height="39" rx="7"/><g fill="currentColor" stroke="none"><circle class="k" data-code="3" cx="18" cy="13.5" r="2"/><circle class="k" data-code="4" cx="24" cy="13.5" r="2"/><circle class="k" cx="30" cy="13.5" r="2"/><circle class="k" data-code="1" cx="18" cy="20.5" r="2"/><circle class="k" cx="24" cy="20.5" r="2"/><circle class="k" cx="30" cy="20.5" r="2"/><circle class="k" cx="18" cy="27.5" r="2"/><circle class="k" data-code="2" cx="24" cy="27.5" r="2"/><circle class="k" cx="30" cy="27.5" r="2"/><circle class="k" cx="18" cy="34.5" r="2"/><circle class="k" cx="24" cy="34.5" r="2"/><circle class="k" cx="30" cy="34.5" r="2"/></g></svg></span><h3 class="display">Fully automated</h3><p>Book online, get a door code and let yourself in. No front desk, no waiting.</p></div></li>
-        <li data-reveal><div class="tcard"><span class="icon-dot"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="d" pathLength="1" d="M6 25a18 18 0 0 1 36 0z"/><path class="d" pathLength="1" d="M24 25v12a4 4 0 0 1-8 0"/><path class="d" pathLength="1" d="M24 7v2"/></svg></span><h3 class="display">Year round</h3><p>Heat, rain or a cold snap, the bays play the same every day.</p></div></li>
-      </ul>
-      <div class="ph ph--dark ph--wide" role="img" aria-label="Photo placeholder: launch monitor cameras above a hitting area" data-parallax data-reveal>
-  <div class="ph__fill"></div>
-  <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.75" y="4" width="12.5" height="9" rx="2"/><circle cx="8" cy="8.5" r="2.4"/><path d="M5.6 4l1-1.7h2.8l1 1.7"/></svg><span>Bay photo · Launch monitor cameras above the hitting area · 2560 × 1100</span></span>
-</div>
+      <h2 class="h2 h2--sm" id="tech-title">What’s in each bay</h2>
+      <div class="tech__grid">
+        <dl class="spec">
+          <div><dt>Launch monitor cameras</dt><dd>They read ball speed, launch, spin and carry on every swing.</dd></div>
+          <div><dt>A big screen</dt><dd>Your shot flies on screen the moment you hit it.</dd></div>
+          <div><dt>Courses and a range</dt><dd>Play a full round, or practice with your numbers on every shot.</dd></div>
+        </dl>
+        <div class="ph ph--dark" role="img" aria-label="Photo placeholder: launch monitor cameras above a hitting area"><div class="ph__fill"></div><span class="ph__tag">Bay photo: launch monitor cameras above the hitting area (2560 × 1100)</span></div>
+      </div>
     </div>
   </section>
 
   <section class="contact" id="contact" aria-labelledby="contact-title">
     <div class="wrap">
-      <header class="head head--split">
-        <div>
-          <p class="kicker" data-reveal>Contact</p>
-          <h2 class="h2" id="contact-title" data-split>Get in <em>touch.</em></h2>
-        </div>
-        <p class="lead" data-reveal>Questions about memberships, events or opening day? Send a message and we will get back to you.</p>
-      </header>
+      <div class="contact__head">
+        <h2 class="h2 h2--sm" id="contact-title">Send us a message</h2>
+      </div>
       <div class="contact__grid">
-        <form class="form form--light" data-form="contact" novalidate data-reveal>
+        <form class="form form--light" data-form="contact" novalidate>
           <div class="form__body">
             <fieldset class="field">
               <legend>What is it about?</legend>
               <div class="chips">
-<label class="chip"><input type="radio" name="topic" value="General" checked><span>General</span></label>
-<label class="chip"><input type="radio" name="topic" value="Memberships"><span>Memberships</span></label>
-<label class="chip"><input type="radio" name="topic" value="Events"><span>Events</span></label>
-<label class="chip"><input type="radio" name="topic" value="Gift cards"><span>Gift cards</span></label>
+                <label class="chip"><input type="radio" name="topic" value="General" checked><span>General</span></label>
+                <label class="chip"><input type="radio" name="topic" value="Memberships"><span>Memberships</span></label>
+                <label class="chip"><input type="radio" name="topic" value="Events"><span>Events</span></label>
+                <label class="chip"><input type="radio" name="topic" value="Gift cards"><span>Gift cards</span></label>
               </div>
             </fieldset>
             <div class="form__row">
@@ -213,53 +176,49 @@
             </div>
           </div>
           <div class="form__done" hidden>
-            <span class="icon-dot"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="d" pathLength="1" d="M12 25l8 8 16-17"/></svg></span>
-            <h3 class="display">Thanks<span data-name></span>.</h3>
-            <p>Your message is on its way. We will get back to you soon.</p>
+            <h3 class="h2">Thanks<span data-name></span>.</h3>
+            <p>Your message is on its way. We’ll get back to you soon.</p>
           </div>
         </form>
-        <aside class="contact__info" data-reveal>
+        <aside class="contact__info" aria-label="Contact details">
           <div>
-            <h3 class="kicker">Address</h3>
+            <p class="label">Address</p>
             <p>Street address coming soon<br>Thibodaux, LA 70301</p>
-            <a class="link" href="https://maps.google.com/?q=Thibodaux,+LA">Get directions <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5 8 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="tlink" href="https://maps.google.com/?q=Thibodaux,+LA">Get directions</a>
           </div>
           <div>
-            <h3 class="kicker">Phone</h3>
+            <p class="label">Phone</p>
             <a class="phone" href="tel:+19855550142">(985) 555-0142</a>
           </div>
           <div>
-            <h3 class="kicker">Hours</h3>
+            <p class="label">Hours</p>
             <dl class="hours">
-              <div><dt>Members only</dt><dd>5 AM to 9 AM</dd></div>
-              <div><dt>Open to everyone</dt><dd>9 AM to 8 PM</dd></div>
-              <div><dt>Members only</dt><dd>8 PM to 11 PM</dd></div>
-            </dl>
+            <div><dt>Members only</dt><dd>5 AM to 9 AM</dd></div>
+            <div><dt>Open to everyone</dt><dd>9 AM to 8 PM</dd></div>
+            <div><dt>Members only</dt><dd>8 PM to 11 PM</dd></div>
+          </dl>
             <p class="fine">Opening soon. Final hours are set at launch.</p>
           </div>
         </aside>
       </div>
-      <div class="ph map-slot ph--pin" role="img" aria-label="Map placeholder: map of the Thibodaux location" data-reveal>
-  <div class="ph__fill"></div>
-  <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M8 14.2s4.6-4.3 4.6-7.7a4.6 4.6 0 1 0-9.2 0c0 3.4 4.6 7.7 4.6 7.7z"/><circle cx="8" cy="6.5" r="1.7"/></svg><span>Map · Embed a Google Map of the address here</span></span>
-</div>
+      <div class="ph map-slot ph--pin" role="img" aria-label="Map placeholder: map of the Thibodaux location"><div class="ph__fill"></div><span class="ph__tag">Map: embed a Google Map of the address here</span></div>
     </div>
   </section>
 
 </main>
 
-<footer class="foot" data-dark>
+<footer class="foot" id="visit" data-dark>
   <div class="wrap">
     <div class="foot__top">
-      <h2 class="h2" data-split>See you on the <em>tee.</em></h2>
-      <a class="btn btn--primary" data-booking data-reveal>Book a Tee Time</a>
+      <h2 class="h2">See you on the tee.</h2>
+      <a class="btn btn--primary" data-booking>Book a Tee Time</a>
     </div>
     <div class="foot__grid">
-      <div class="foot__brand" data-reveal>
+      <div class="foot__brand">
         <a href="/" aria-label="Thibodaux T-Box home"><img src="/assets/tbox-logo-reverse-footer.png" width="281" height="240" alt="Thibodaux TBOX Golf Simulators" loading="lazy"></a>
       </div>
-      <div data-reveal>
-        <h3 class="kicker">Explore</h3>
+      <div>
+        <h3 class="foot__label">Explore</h3>
         <ul class="foot__links">
           <li><a href="/">Home</a></li>
           <li><a href="/memberships">Memberships</a></li>
@@ -268,23 +227,23 @@
           <li><a href="/about" aria-current="page">About</a></li>
         </ul>
       </div>
-      <div data-reveal>
-        <h3 class="kicker">Hours</h3>
+      <div>
+        <h3 class="foot__label">Hours</h3>
         <dl class="hours">
-          <div><dt>Members only</dt><dd>5 AM to 9 AM</dd></div>
-          <div><dt>Open to everyone</dt><dd>9 AM to 8 PM</dd></div>
-          <div><dt>Members only</dt><dd>8 PM to 11 PM</dd></div>
-        </dl>
+            <div><dt>Members only</dt><dd>5 AM to 9 AM</dd></div>
+            <div><dt>Open to everyone</dt><dd>9 AM to 8 PM</dd></div>
+            <div><dt>Members only</dt><dd>8 PM to 11 PM</dd></div>
+          </dl>
         <p class="fine">Opening soon. Final hours are set at launch.</p>
       </div>
-      <div data-reveal>
+      <div>
         <div class="foot__group">
-          <h3 class="kicker">Visit</h3>
+          <h3 class="foot__label">Visit</h3>
           <p>Street address coming soon<br>Thibodaux, LA 70301</p>
-          <a class="link" href="https://maps.google.com/?q=Thibodaux,+LA">Get directions <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5 8 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="tlink" href="https://maps.google.com/?q=Thibodaux,+LA">Get directions</a>
         </div>
         <div class="foot__group">
-          <h3 class="kicker">Call</h3>
+          <h3 class="foot__label">Call</h3>
           <a class="foot__phone" href="tel:+19855550142">(985) 555-0142</a>
         </div>
       </div>
@@ -292,7 +251,7 @@
     <div class="foot__base">
       <p>&copy; <span data-year>2026</span> Thibodaux T-Box</p>
       <nav aria-label="Footer">
-        <a data-login>Member Login</a>
+        <a data-login>Member login</a>
         <a data-social="instagram" hidden>Instagram</a>
         <a data-social="facebook" hidden>Facebook</a>
       </nav>

@@ -6,7 +6,7 @@ Website for Thibodaux T-Box, an indoor golf simulator in Thibodaux, Louisiana.
 
 | URL | File |
 | --- | --- |
-| `/` | `index.html` (self-contained homepage) |
+| `/` | `index.html` |
 | `/memberships` | `memberships.html` |
 | `/events` | `events.html` |
 | `/gift-cards` | `gift-cards.html` |
@@ -15,11 +15,11 @@ Website for Thibodaux T-Box, an indoor golf simulator in Thibodaux, Louisiana.
 
 `vercel.json` turns on clean URLs, so `/memberships` serves `memberships.html`.
 
-The inner pages share `assets/site.css` and `assets/site.js`. GSAP 3.12.5 and Lenis 1.1.14 load from CDNs on every page.
+Every page shares `assets/site.css` and `assets/site.js`. GSAP 3.12.5 and Lenis 1.1.14 load from CDNs.
 
 ## Settings
 
-Inner pages: the `SITE` object at the top of `assets/site.js`.
+All settings live in the `SITE` object at the top of `assets/site.js`, one place for the whole site:
 
 - `BOOKING_URL`: booking platform link for every Book Now and Book a Tee Time button
 - `MEMBERSHIP_URL`: membership sign up (falls back to `BOOKING_URL`)
@@ -29,9 +29,15 @@ Inner pages: the `SITE` object at the top of `assets/site.js`.
 - `FOUNDING_DEADLINE`: target opening day for the founding member countdown
 - `PHONE`, `SOCIAL`: phone number for form messages, and Instagram and Facebook links
 
-Homepage: the same `BOOKING_URL`, `MEMBER_LOGIN_URL`, `FOUNDING_DEADLINE` and `SOCIAL` settings sit at the top of the script in `index.html`. Keep both in sync.
+The brand green is `--brand` at the top of `assets/site.css`.
 
-The brand green is `--brand` at the top of the stylesheet.
+## Design rules
+
+Square shapes and flat color. Pills are reserved for things you can press, and uppercase for headlines. No eyebrow labels, glows, glass or repeated card grids. Motion only where it carries information: the countdown, the door code, the rate bars, the shot tracer, the hours timeline and the gift card.
+
+## Photos
+
+Every image is a labeled slot. To add a photo, put an `<img>` inside the slot's `.ph__fill` element; the placeholder label hides on its own.
 
 ## Assets
 

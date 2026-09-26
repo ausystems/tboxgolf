@@ -11,12 +11,12 @@
 <link rel="apple-touch-icon" href="/assets/tbox-apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400..500&family=Mona+Sans:wdth,wght@75..100,400..900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..100,400..800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
 <!-- Google Tag Manager: paste the container snippet (GTM-XXXXXXX) here. Load GA4 and the Meta Pixel through GTM. -->
 <script>window.dataLayer = window.dataLayer || [];</script>
 <script>
-  // Animated elements start hidden. If the motion scripts never arrive, show everything after 3.5s.
+  // The hero waits for the motion script. If it never arrives, show everything after 3.5s.
   document.documentElement.classList.add('js');
   setTimeout(function () {
     if (!document.documentElement.classList.contains('is-ready')) document.documentElement.classList.remove('js');
@@ -30,7 +30,7 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="nav is-dark" data-nav>
+<header class="nav" data-nav>
   <div class="wrap nav__in">
     <a class="logo" href="/" aria-label="Thibodaux T-Box home">
       <span class="logo__stack">
@@ -45,7 +45,7 @@
       <a href="/about">About</a>
     </nav>
     <div class="nav__actions">
-      <a class="nav__login" data-login>Member Login</a>
+      <a class="nav__login" data-login>Member login</a>
       <a class="btn btn--nav" data-booking>Book Now</a>
       <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
     </div>
@@ -54,16 +54,16 @@
 
 <div class="menu" id="menu" inert>
   <nav class="menu__links" aria-label="Menu">
-    <a href="/" style="--i:0">Home</a>
-    <a href="/memberships" style="--i:1">Memberships</a>
-    <a href="/events" style="--i:2" aria-current="page">Events</a>
-    <a href="/gift-cards" style="--i:3">Gift cards</a>
-    <a href="/about" style="--i:4">About</a>
+    <a href="/">Home</a>
+    <a href="/memberships">Memberships</a>
+    <a href="/events" aria-current="page">Events</a>
+    <a href="/gift-cards">Gift cards</a>
+    <a href="/about">About</a>
   </nav>
   <div class="menu__foot">
     <a class="btn btn--primary" data-booking>Book a Tee Time</a>
     <div class="menu__meta">
-      <a data-login>Member Login</a>
+      <a data-login>Member login</a>
       <a href="tel:+19855550142">(985) 555-0142</a>
     </div>
   </div>
@@ -71,157 +71,64 @@
 
 <main id="main">
 
-  <section class="hero hero--page" id="top" aria-labelledby="hero-title" data-dark>
-    <div class="hero__media">
-      <div class="ph ph--dark ph--bleed ph--hero" role="img" aria-label="Photo placeholder: a group cheering a shot at the bay screen">
-        <div class="ph__fill"></div>
-        <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.75" y="4" width="12.5" height="9" rx="2"/><circle cx="8" cy="8.5" r="2.4"/><path d="M5.6 4l1-1.7h2.8l1 1.7"/></svg><span>Hero photo · Group cheering a shot at the bay screen · 2880 × 1800</span></span>
+  <section class="hero hero--split" id="top" aria-labelledby="hero-title">
+    <div class="hero__grid">
+      <div class="hero__text">
+        <h1 class="h1 hero__title" id="hero-title"><span class="ln"><span>Bring the</span></span><span class="ln"><span>whole crew.</span></span></h1>
+        <p class="hero__lead" data-hero-in>Company outings, birthdays, fantasy football drafts and game-day watch parties.</p>
+        <dl class="hero__facts" data-hero-in>
+          <div><dt>Group size</dt><dd>4 to 25</dd></div>
+          <div><dt>Bays</dt><dd>3</dd></div>
+          <div><dt>Drinks</dt><dd>BYOB</dd></div>
+          <div><dt>Food</dt><dd>Catering available</dd></div>
+        </dl>
+        <div class="hero__ctas" data-hero-in><a class="btn btn--primary" href="#inquiry">Plan an Event</a><a class="btn btn--light" href="tel:+19855550142">Call Us</a></div>
       </div>
-      <div class="hero__shade"></div>
-    </div>
-    <div class="hero__content">
-      <div class="wrap">
-        <p class="hero__kicker" data-hero-el>Events <strong>Groups of 4 to 25</strong></p>
-        <h1 class="hero__title" id="hero-title" data-split><span class="ln">Bring the</span> <em class="ln">whole crew.</em></h1>
-        <p class="hero__lead" data-hero-el>Company outings, birthdays, fantasy football drafts and game-day watch parties, all at the tee.</p>
-        <div class="hero__ctas" data-hero-el>
-          <a class="btn btn--primary" href="#inquiry">Plan an Event</a>
-          <a class="btn btn--light" href="tel:+19855550142">Call Us</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="facts-sec" aria-label="Event details">
-    <div class="wrap">
-      <ul class="facts">
-        <li data-reveal><span class="fact__num">4 to 25</span><span class="fact__label">Guests per event</span></li>
-        <li data-reveal><span class="fact__num">3</span><span class="fact__label">Simulator bays</span></li>
-        <li data-reveal><span class="fact__num">BYOB</span><span class="fact__label">Bring your own drinks</span></li>
-        <li data-reveal><span class="fact__num">Catering</span><span class="fact__label">Available for events</span></li>
-      </ul>
+      <div class="ph" role="img" aria-label="Photo placeholder: a group cheering a shot at the bay screen"><div class="ph__fill"></div><span class="ph__tag">Hero photo: a group cheering a shot at the bay screen (2000 × 2400)</span></div>
     </div>
   </section>
 
   <section class="occasions" id="ideas" aria-labelledby="occ-title">
     <div class="wrap">
-      <header class="head head--center">
-        <p class="kicker" data-reveal>Occasions</p>
-        <h2 class="h2" id="occ-title" data-split>Any reason <em>to gather.</em></h2>
-        <p class="lead" data-reveal>Golfers and non-golfers alike get a turn at the tee. Here is what groups come in for.</p>
-      </header>
-      <ul class="occ-grid">
-        <li data-reveal>
-          <article class="occ">
-            <div class="ph" role="img" aria-label="Photo placeholder: coworkers teeing off together" data-parallax>
-  <div class="ph__fill"></div>
-  <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.75" y="4" width="12.5" height="9" rx="2"/><circle cx="8" cy="8.5" r="2.4"/><path d="M5.6 4l1-1.7h2.8l1 1.7"/></svg><span>Photo · Coworkers teeing off together · 1200 × 1500</span></span>
-</div>
-            <div class="occ__text">
-              <h3 class="display occ__title">Company outings</h3>
-              <p>Team building people actually look forward to. Bring coworkers, clients or the whole office.</p>
-            </div>
-          </article>
-        </li>
-        <li data-reveal>
-          <article class="occ">
-            <div class="ph" role="img" aria-label="Photo placeholder: birthday group around a bay" data-parallax>
-  <div class="ph__fill"></div>
-  <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.75" y="4" width="12.5" height="9" rx="2"/><circle cx="8" cy="8.5" r="2.4"/><path d="M5.6 4l1-1.7h2.8l1 1.7"/></svg><span>Photo · Birthday group around a bay · 1200 × 1500</span></span>
-</div>
-            <div class="occ__text">
-              <h3 class="display occ__title">Birthdays</h3>
-              <p>A party where everyone gets a turn at the tee, golfer or not.</p>
-            </div>
-          </article>
-        </li>
-        <li data-reveal>
-          <article class="occ">
-            <div class="ph" role="img" aria-label="Photo placeholder: draft night crowd at a bay" data-parallax>
-  <div class="ph__fill"></div>
-  <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.75" y="4" width="12.5" height="9" rx="2"/><circle cx="8" cy="8.5" r="2.4"/><path d="M5.6 4l1-1.7h2.8l1 1.7"/></svg><span>Photo · Draft night crowd at a bay · 1200 × 1500</span></span>
-</div>
-            <div class="occ__text">
-              <h3 class="display occ__title">Fantasy football drafts</h3>
-              <p>Get the whole league in one place for draft night, with a few swings between picks.</p>
-            </div>
-          </article>
-        </li>
-        <li data-reveal>
-          <article class="occ">
-            <div class="ph" role="img" aria-label="Photo placeholder: friends watching the game" data-parallax>
-  <div class="ph__fill"></div>
-  <span class="ph__tag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.75" y="4" width="12.5" height="9" rx="2"/><circle cx="8" cy="8.5" r="2.4"/><path d="M5.6 4l1-1.7h2.8l1 1.7"/></svg><span>Photo · Friends watching the game · 1200 × 1500</span></span>
-</div>
-            <div class="occ__text">
-              <h3 class="display occ__title">Watch parties</h3>
-              <p>Game day with your crew, plus a few swings at halftime.</p>
-            </div>
-          </article>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="steps-sec" aria-labelledby="plan-title">
-    <div class="wrap">
-      <header class="head head--split">
-        <div>
-          <p class="kicker" data-reveal>How it works</p>
-          <h2 class="h2" id="plan-title" data-split>Planning <em>is easy.</em></h2>
+      <h2 class="h2 h2--sm" id="occ-title">What groups book us for</h2>
+      <div class="occ" data-occ>
+        <ul class="occ__list">
+          <li><button class="occ__item is-active" type="button" aria-pressed="true"><span class="occ__name">Company outings</span><span class="occ__desc"><span>Bring coworkers, clients or the whole office.</span></span></button></li>
+          <li><button class="occ__item" type="button" aria-pressed="false"><span class="occ__name">Birthdays</span><span class="occ__desc"><span>Everyone gets a turn at the tee, golfer or not.</span></span></button></li>
+          <li><button class="occ__item" type="button" aria-pressed="false"><span class="occ__name">Fantasy football drafts</span><span class="occ__desc"><span>Get the whole league in one room for draft night.</span></span></button></li>
+          <li><button class="occ__item" type="button" aria-pressed="false"><span class="occ__name">Watch parties</span><span class="occ__desc"><span>Watch the game with your crew and hit a few drives at halftime.</span></span></button></li>
+        </ul>
+        <div class="occ__media" aria-hidden="true">
+          <div class="ph occ__ph is-active" aria-hidden="true"><div class="ph__fill"></div><span class="ph__tag">Photo: coworkers teeing off together (2000 × 1600)</span></div>
+          <div class="ph occ__ph" aria-hidden="true"><div class="ph__fill"></div><span class="ph__tag">Photo: a birthday group around a bay (2000 × 1600)</span></div>
+          <div class="ph occ__ph" aria-hidden="true"><div class="ph__fill"></div><span class="ph__tag">Photo: a draft night crowd at a bay (2000 × 1600)</span></div>
+          <div class="ph occ__ph" aria-hidden="true"><div class="ph__fill"></div><span class="ph__tag">Photo: friends watching the game (2000 × 1600)</span></div>
         </div>
-        <p class="lead" data-reveal>Events are booked through a quick inquiry, so we can plan the details with you.</p>
-      </header>
-      <ul class="steps">
-        <li data-reveal>
-          <div class="step">
-            <div class="step__icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="d" pathLength="1" d="M8 13.5A6 6 0 0 1 14 7.5h20a6 6 0 0 1 6 6v12a6 6 0 0 1-6 6H22.5L14 39v-7.5A6 6 0 0 1 8 25.5z"/><path class="d" pathLength="1" d="M16.5 17.5h15M16.5 23.5h9"/></svg></div>
-            <h3 class="display step__title">Tell us about it</h3>
-            <p class="step__copy">Send the date, your group size and what you are celebrating.</p>
-          </div>
-        </li>
-        <li data-reveal>
-          <div class="step">
-            <div class="step__icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect class="d" pathLength="1" x="6.5" y="10" width="35" height="31.5" rx="7"/><path class="d" pathLength="1" d="M6.5 19h35"/><path class="d" pathLength="1" d="M15.5 6.5v7M32.5 6.5v7"/><path class="d" pathLength="1" d="M17.5 30.5l4.5 4.5 9-9"/></svg></div>
-            <h3 class="display step__title">Plan it together</h3>
-            <p class="step__copy">We confirm the bays, the timing and the catering, if you want it.</p>
-          </div>
-        </li>
-        <li data-reveal>
-          <div class="step">
-            <div class="step__icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle class="d" pathLength="1" cx="24" cy="16.5" r="10.5"/><path class="d" pathLength="1" d="M15 29h18c0 0-3.2 3.6-6.5 4.4V40.5a2.5 2.5 0 0 1-5 0v-7.1C18.2 32.6 15 29 15 29z"/><g fill="currentColor" stroke="none"><circle class="k" cx="20.6" cy="13.4" r="1.2"/><circle class="k" cx="25.6" cy="12" r="1.2"/><circle class="k" cx="27.8" cy="17" r="1.2"/><circle class="k" cx="22.6" cy="18.8" r="1.2"/></g></svg></div>
-            <h3 class="display step__title">Show up and play</h3>
-            <p class="step__copy">Bring your crew and your own drinks. The bays will be ready.</p>
-          </div>
-        </li>
-      </ul>
+      </div>
     </div>
   </section>
 
-  <section class="band inquiry" id="inquiry" aria-labelledby="inq-title" data-dark>
-    <div class="band__bg" aria-hidden="true"></div>
+  <section class="inquiry" id="inquiry" aria-labelledby="inq-title" data-dark>
     <div class="wrap inquiry__grid">
-      <header class="inquiry__head">
-        <p class="kicker" data-reveal>Event inquiry</p>
-        <h2 class="h2" id="inq-title" data-split>Let's plan <em>your event.</em></h2>
-        <p class="lead" data-reveal>Tell us a little about your group and we will get back to you to plan the details.</p>
-        <ul class="pills" data-reveal><li>Groups of 4 to 25</li><li>Catering available</li><li>BYOB welcome</li></ul>
-      </header>
-      <form class="form" data-form="event_inquiry" novalidate data-reveal>
+      <div class="inquiry__head">
+        <h2 class="h2 h2--sm" id="inq-title">Plan your event</h2>
+        <p class="lead">Tell us about your group and we’ll get back to you to work out the details.</p>
+      </div>
+      <form class="form" data-form="event_inquiry" novalidate>
         <div class="form__body">
           <fieldset class="field">
             <legend>What are you planning?</legend>
             <div class="chips">
-<label class="chip"><input type="radio" name="event_type" value="Company outing" checked><span>Company outing</span></label>
-<label class="chip"><input type="radio" name="event_type" value="Birthday"><span>Birthday</span></label>
-<label class="chip"><input type="radio" name="event_type" value="Fantasy football draft"><span>Fantasy football draft</span></label>
-<label class="chip"><input type="radio" name="event_type" value="Watch party"><span>Watch party</span></label>
-<label class="chip"><input type="radio" name="event_type" value="Something else"><span>Something else</span></label>
+                <label class="chip"><input type="radio" name="event_type" value="Company outing" checked><span>Company outing</span></label>
+                <label class="chip"><input type="radio" name="event_type" value="Birthday"><span>Birthday</span></label>
+                <label class="chip"><input type="radio" name="event_type" value="Fantasy football draft"><span>Fantasy football draft</span></label>
+                <label class="chip"><input type="radio" name="event_type" value="Watch party"><span>Watch party</span></label>
+                <label class="chip"><input type="radio" name="event_type" value="Something else"><span>Something else</span></label>
             </div>
           </fieldset>
           <div class="field range">
             <label class="range__label" for="guests">How many guests?</label>
-            <div class="range__read"><output class="range__value" for="guests">12</output><span class="range__unit">Guests</span></div>
+            <div class="range__read"><output class="range__value fig" for="guests">12</output><span class="range__unit">guests</span></div>
             <input class="range__input" type="range" id="guests" name="guests" min="4" max="25" step="1" value="12">
           </div>
           <div class="form__row">
@@ -242,9 +149,9 @@
           <fieldset class="field">
             <legend>Catering?</legend>
             <div class="chips">
-<label class="chip"><input type="radio" name="catering" value="Yes, please"><span>Yes, please</span></label>
-<label class="chip"><input type="radio" name="catering" value="No, thanks"><span>No, thanks</span></label>
-<label class="chip"><input type="radio" name="catering" value="Not sure yet" checked><span>Not sure yet</span></label>
+                <label class="chip"><input type="radio" name="catering" value="Yes, please"><span>Yes, please</span></label>
+                <label class="chip"><input type="radio" name="catering" value="No, thanks"><span>No, thanks</span></label>
+                <label class="chip"><input type="radio" name="catering" value="Not sure yet" checked><span>Not sure yet</span></label>
             </div>
           </fieldset>
           <div class="form__row">
@@ -272,9 +179,8 @@
           </div>
         </div>
         <div class="form__done" hidden>
-          <span class="icon-dot"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="d" pathLength="1" d="M12 25l8 8 16-17"/></svg></span>
-          <h3 class="display">Thanks<span data-name></span>.</h3>
-          <p>Your inquiry is on its way. We will be in touch soon to plan the details.</p>
+          <h3 class="h2">Thanks<span data-name></span>.</h3>
+          <p>Your inquiry is on its way. We’ll be in touch soon.</p>
         </div>
       </form>
     </div>
@@ -282,46 +188,33 @@
 
   <section class="faq" id="faq" aria-labelledby="faq-title">
     <div class="wrap faq__grid">
-      <header class="faq__head">
-        <p class="kicker" data-reveal>Questions</p>
-        <h2 class="h2" id="faq-title" data-split>Before you <em>book.</em></h2>
-        <p class="lead" data-reveal>Have a question that is not here? <a href="#inquiry">Ask it in your inquiry.</a></p>
-      </header>
+      <div class="faq__head">
+        <h2 class="h2" id="faq-title">Before you book</h2>
+        <p class="lead">Don’t see your question? <a class="tlink" href="#inquiry">Ask it in your inquiry.</a></p>
+      </div>
       <div class="faq__list">
-        <details class="qa" data-reveal>
-          <summary>Can we bring food and drinks?<span class="qa__icon" aria-hidden="true"></span></summary>
-          <div class="qa__a"><p>Yes. T-Box is BYOB, and catering is available for events.</p></div>
-        </details>
-        <details class="qa" data-reveal>
-          <summary>How many people can we bring?<span class="qa__icon" aria-hidden="true"></span></summary>
-          <div class="qa__a"><p>Events work best for groups of 4 to 25.</p></div>
-        </details>
-        <details class="qa" data-reveal>
-          <summary>Can we book an event online?<span class="qa__icon" aria-hidden="true"></span></summary>
-          <div class="qa__a"><p>Events are booked through the inquiry form so we can plan the details with you. For a regular tee time, you can book online any time.</p></div>
-        </details>
-        <details class="qa" data-reveal>
-          <summary>Do you offer leagues or lessons?<span class="qa__icon" aria-hidden="true"></span></summary>
-          <div class="qa__a"><p>Not yet. Leagues and lessons are in the works for after we open.</p></div>
-        </details>
+        <details class="qa"><summary>Can we bring food and drinks?<span class="qa__icon" aria-hidden="true"></span></summary><div class="qa__a"><p>Yes. T-Box is BYOB, and catering is available for events.</p></div></details>
+        <details class="qa"><summary>How many people can we bring?<span class="qa__icon" aria-hidden="true"></span></summary><div class="qa__a"><p>Events work best for groups of 4 to 25.</p></div></details>
+        <details class="qa"><summary>Can we book an event online?<span class="qa__icon" aria-hidden="true"></span></summary><div class="qa__a"><p>Events go through the inquiry form so we can plan it with you. Regular tee times are booked online.</p></div></details>
+        <details class="qa"><summary>Do you offer leagues or lessons?<span class="qa__icon" aria-hidden="true"></span></summary><div class="qa__a"><p>Not yet. Leagues and lessons are planned for after we open.</p></div></details>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer class="foot" data-dark>
+<footer class="foot" id="visit" data-dark>
   <div class="wrap">
     <div class="foot__top">
-      <h2 class="h2" data-split>See you on the <em>tee.</em></h2>
-      <a class="btn btn--primary" data-booking data-reveal>Book a Tee Time</a>
+      <h2 class="h2">See you on the tee.</h2>
+      <a class="btn btn--primary" data-booking>Book a Tee Time</a>
     </div>
     <div class="foot__grid">
-      <div class="foot__brand" data-reveal>
+      <div class="foot__brand">
         <a href="/" aria-label="Thibodaux T-Box home"><img src="/assets/tbox-logo-reverse-footer.png" width="281" height="240" alt="Thibodaux TBOX Golf Simulators" loading="lazy"></a>
       </div>
-      <div data-reveal>
-        <h3 class="kicker">Explore</h3>
+      <div>
+        <h3 class="foot__label">Explore</h3>
         <ul class="foot__links">
           <li><a href="/">Home</a></li>
           <li><a href="/memberships">Memberships</a></li>
@@ -330,23 +223,23 @@
           <li><a href="/about">About</a></li>
         </ul>
       </div>
-      <div data-reveal>
-        <h3 class="kicker">Hours</h3>
+      <div>
+        <h3 class="foot__label">Hours</h3>
         <dl class="hours">
-          <div><dt>Members only</dt><dd>5 AM to 9 AM</dd></div>
-          <div><dt>Open to everyone</dt><dd>9 AM to 8 PM</dd></div>
-          <div><dt>Members only</dt><dd>8 PM to 11 PM</dd></div>
-        </dl>
+            <div><dt>Members only</dt><dd>5 AM to 9 AM</dd></div>
+            <div><dt>Open to everyone</dt><dd>9 AM to 8 PM</dd></div>
+            <div><dt>Members only</dt><dd>8 PM to 11 PM</dd></div>
+          </dl>
         <p class="fine">Opening soon. Final hours are set at launch.</p>
       </div>
-      <div data-reveal>
+      <div>
         <div class="foot__group">
-          <h3 class="kicker">Visit</h3>
+          <h3 class="foot__label">Visit</h3>
           <p>Street address coming soon<br>Thibodaux, LA 70301</p>
-          <a class="link" href="https://maps.google.com/?q=Thibodaux,+LA">Get directions <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5 8 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="tlink" href="https://maps.google.com/?q=Thibodaux,+LA">Get directions</a>
         </div>
         <div class="foot__group">
-          <h3 class="kicker">Call</h3>
+          <h3 class="foot__label">Call</h3>
           <a class="foot__phone" href="tel:+19855550142">(985) 555-0142</a>
         </div>
       </div>
@@ -354,7 +247,7 @@
     <div class="foot__base">
       <p>&copy; <span data-year>2026</span> Thibodaux T-Box</p>
       <nav aria-label="Footer">
-        <a data-login>Member Login</a>
+        <a data-login>Member login</a>
         <a data-social="instagram" hidden>Instagram</a>
         <a data-social="facebook" hidden>Facebook</a>
       </nav>
