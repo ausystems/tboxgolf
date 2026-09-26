@@ -33,7 +33,7 @@ The brand green is `--brand` at the top of `assets/site.css`.
 
 ## Design rules
 
-Square shapes and flat color. Pills are reserved for things you can press, and uppercase for headlines. No eyebrow labels, glows, glass or repeated card grids. Motion only where it carries information: the countdown, the door code, the rate bars, the shot tracer, the hours timeline and the gift card.
+Square shapes and flat color. Pills are reserved for things you can press, and uppercase for headlines. No eyebrow labels, glows, glass or repeated card grids. Motion only where it carries information: the countdown, the door code, the rate bars, the shot tracer, the hours timeline and the punch card.
 
 ## Photos
 

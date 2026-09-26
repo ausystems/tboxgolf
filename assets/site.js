@@ -453,27 +453,6 @@ const SITE = {
       });
     });
 
-    // Gift card: a resting 3D pose that follows the pointer.
-    const stage = $('[data-tilt]');
-    if (stage) {
-      const card = $('.gcard', stage);
-      const rest = { x: 8, y: -16 };
-      gsap.set(card, { transformPerspective: 1400, rotationX: rest.x, rotationY: rest.y });
-      const rx = gsap.quickTo(card, 'rotationX', { duration: 0.9, ease: 'power3.out' });
-      const ry = gsap.quickTo(card, 'rotationY', { duration: 0.9, ease: 'power3.out' });
-      const area = stage.closest('.hero') || stage;
-      if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-        area.addEventListener('pointermove', (e) => {
-          const r = stage.getBoundingClientRect();
-          const x = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width));
-          const y = Math.min(1, Math.max(0, (e.clientY - r.top) / r.height));
-          ry((x - 0.5) * 20);
-          rx(-(y - 0.5) * 14);
-        });
-        area.addEventListener('pointerleave', () => { rx(rest.x); ry(rest.y); });
-      }
-    }
-
     // Sample drive fires when the plot is fully in view.
     if (shotApi) {
       shotApi.prime();

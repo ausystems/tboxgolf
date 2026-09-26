@@ -309,7 +309,7 @@ html.lenis { scroll-behavior: auto; }
 .hero__facts dd { margin-top: .15rem; font-size: 1.125rem; font-weight: 600; }
 
 /* Object hero: gift cards */
-.hero--gift { padding: calc(var(--nav-h) + clamp(3.5rem, 8vw, 7rem)) 0 clamp(4.5rem, 9vw, 8rem); }
+.hero--gift { padding: calc(var(--nav-h) + clamp(3.5rem, 8vw, 7rem)) 0 clamp(4.5rem, 9vw, 8rem); overflow: hidden; }
 .hero--gift .hero__grid { display: grid; gap: 4rem; align-items: center; }
 @media (min-width: 960px) { .hero--gift .hero__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 3rem; } }
 .hero--gift .hero__lead { margin-top: 1.75rem; }
@@ -319,17 +319,15 @@ html.lenis { scroll-behavior: auto; }
    Gift card object (used on the homepage and the gift card page)
    The one rounded surface on the site, because it is a real card.
    ========================================================================== */
-.gcard-stage { display: grid; place-items: center; perspective: 1400px; }
+.gcard-stage { display: grid; place-items: center; }
 .gcard {
   position: relative;
   width: min(100%, 520px);
   aspect-ratio: 1.586;
   border-radius: clamp(14px, 1.8vw, 22px);
   overflow: hidden;
-  transform-style: preserve-3d;
   background: #175932;
   box-shadow: 0 40px 70px -35px rgba(5, 9, 7, .7);
-  will-change: transform;
 }
 .gcard__mark { position: absolute; right: -24%; bottom: -40%; width: 62%; height: auto; opacity: .1; }
 .gcard__logo { position: absolute; top: 10%; left: 7.5%; width: auto; height: 13%; }
